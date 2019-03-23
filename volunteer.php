@@ -85,7 +85,7 @@
                 <h2>Mettre en place un projet précis</h2>
                 <p>Si vous disposez d'un savoir-faire spécifique, il peut être intéressant de mettre en place un projet en lien avec ces compétences.</p>
                 <p>Les élèves disposent de plusieurs créneaux de <em>school project</em> au cours desquels les volontaires peuvent intervenir.</p>
-                <p>Du cours de français à la préparation jardin en permaculture en passant par l'organisation de l'Exposcience, toutes les disciplines peuvent être mises à l'œuvre. N'hésitez donc pas à nous proposer vos idées.</p>
+                <p>Du cours de français à la préparation d'un jardin en permaculture en passant par l'organisation de l'Exposcience, toutes les disciplines peuvent être mises à l'œuvre. N'hésitez donc pas à nous proposer vos idées.</p>
             </div>
         </div>
         <div class="row vhmavi-txt-img-shared-row">

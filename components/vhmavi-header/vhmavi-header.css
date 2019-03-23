@@ -28,3 +28,8 @@
         font-size: 0.7rem;
     }
 }
+
+/* Set the current page in the dropdown as active */
+.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top .collapse.navbar-collapse .navbar-nav .nav-item.dropdown.active.vhmavi-show .dropdown-menu .dropdown-item.vhmavi-active {
+  color: rgb(255, 184, 28);
+} 
