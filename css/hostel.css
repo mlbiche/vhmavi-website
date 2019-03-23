@@ -1,0 +1,11 @@
+.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top + .container.vhmavi-container.vhmavi-full-width-img-container {
+    margin-top: 90px;
+}
+
+#vhmavi-img-hostel-students {
+    object-position: center 40%;
+}
+
+#vhmavi-img-new-hostel {
+    object-position: center 35%;
+}

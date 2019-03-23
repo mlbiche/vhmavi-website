@@ -1,0 +1,33 @@
+.card-deck .card.vhmavi-sponsoring-option {
+    cursor: pointer;
+}
+
+.card-deck .card.vhmavi-sponsoring-option h2.card-header {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+/* Change the header format for selected option and on hover */
+.card-deck .card.vhmavi-sponsoring-option.vhmavi-sponsoring-option-selected .card-header,
+.card-deck .card.vhmavi-sponsoring-option:hover .card-header {
+    border-color: rgb(0, 61, 165);
+    background-color: rgb(0, 61, 165);
+    color: #fff;
+}
+
+.card .card-body .vhmavi-amount {
+    color: rgb(255, 184, 28);
+}
+
+.card .card-body .vhmavi-amount.vhmavi-amount-deduced {
+    font-style: italic;
+}
+
+.form-group.row.vhmavi-amount-input {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.form-group.row.vhmavi-amount-input #donation-sponsor-form-project-amount {
+    text-align: right;
+}

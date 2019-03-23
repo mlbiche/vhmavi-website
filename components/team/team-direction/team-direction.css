@@ -1,0 +1,58 @@
+.container.vhmavi-container .row .vhmavi-member-col {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container.vhmavi-container .row .vhmavi-member-col h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.container.vhmavi-container .row .vhmavi-member-col h3 {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.container.vhmavi-container .row .vhmavi-member-col .vhmavi-member-img-container {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* On wide screen, the image has a given height */
+@media (min-width: 992px) {
+    .container.vhmavi-container .row .vhmavi-member-col .vhmavi-member-img-container {
+        height: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container.vhmavi-container .row .vhmavi-member-col .vhmavi-member-img-container {
+        height: 400px;
+    }
+}
+
+.container.vhmavi-container .row .vhmavi-member-col .vhmavi-member-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.container.vhmavi-container .row .vhmavi-member-explanation-col {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.container.vhmavi-container .row .vhmavi-member-explanation-col h2 {
+    font-size: 1.5rem;
+}
+
+.container.vhmavi-container .row .card .card-body .vhmavi-direction-quote {
+    font-style: italic;
+    color: rgba(0,0,0,.65);
+}

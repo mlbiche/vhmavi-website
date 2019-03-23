@@ -1,0 +1,17 @@
+#vhmavi-association-identity {
+    display: none;
+}
+
+.btn-group.vhmavi-sponsor-type-btn-group {
+    width: 100%;
+}
+
+button.btn.btn-outline-vhmavi.vhmavi-btn-group-selected {
+    color: #fff;
+    background-color: rgb(0, 61, 165);
+    border-color: rgb(0, 61, 165);
+}
+
+#donation-sponsor-form-each-month-lab {
+    display: none;
+}

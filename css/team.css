@@ -1,0 +1,11 @@
+@media (min-width: 576px) {
+    #vhmavi-img-team {
+        object-position: center 20%;
+    }
+}
+
+@media (max-width: 576px) {
+    #vhmavi-img-team {
+        object-position: 75%;
+    }
+}

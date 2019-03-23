@@ -1,0 +1,29 @@
+.container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-text-col h1.vhmavi-presentation-h1,
+.container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-text-col h2.vhmavi-presentation-h2 {
+    font-size: 1.75rem;
+}
+
+
+#vhmavi-img-nepal-field {
+    object-position: left bottom;
+}
+
+@media (min-width: 576px) {
+    #vhmavi-img-little-student {
+        object-position: 90% top;
+    }
+}
+
+@media (max-width: 576px) {
+    #vhmavi-img-little-student {
+        object-position: 80% top;
+    }
+}
+
+#vhmavi-img-preschool-building {
+    object-position: center 20%;
+}
+
+.vhmavi-school-name {
+    color: rgb(0, 61, 165);
+}

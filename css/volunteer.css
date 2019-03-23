@@ -1,0 +1,50 @@
+.container.vhmavi-container .row .vhmavi-icon-text-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 576px) {
+    .container.vhmavi-container .row .vhmavi-icon-text-row {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 576px) {
+    .container.vhmavi-container .row .vhmavi-icon-text-row {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+}
+
+.container.vhmavi-container .row .vhmavi-icon-text-row i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+#vhmavi-img-volunteers-students {
+    object-position: center 30%;
+}
+
+.container.vhmavi-container .row .vhmavi-volunteer-quote {
+    color: rgb(0, 61, 165);
+    font-style: italic;
+}
+
+.container.vhmavi-container .row .vhmavi-volunteer-quote-author {
+    color: rgb(0, 61, 165);
+    font-size: 1.15rem;
+    font-weight: lighter;
+}
+
+@media (max-width: 576px) {
+    #vhmavi-img-volunteer-team {
+        object-position: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    #vhmavi-img-volunteer-friend {
+        object-position: 70%;
+    }
+}

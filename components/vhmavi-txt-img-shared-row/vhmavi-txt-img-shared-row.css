@@ -1,0 +1,113 @@
+/**
+ * vhmavi-txt-img-shared-row.csss
+ * Provide the style of row that contains image facing text
+ * The image fill its full columns and do not change container height
+ */
+ 
+/**
+ * Remove the container margins
+ * As the image needs to fill the full column, the margins are not defined on container but on
+ * text columns only
+ */
+ .container.vhmavi-container.vhmavi-text-img-shared-container {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* Remove the row margins */
+.container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row {
+    margin: 0;
+}
+
+.container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/**
+ * Redefine the max-width and margins for the text columns
+ * Lass than a width of 992px, the column is alone on its row so it has auto margins on right and left
+ */
+@media (min-width: 576px) {
+    .container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-text-col {
+        max-width: 540px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-text-col {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+
+/**
+ * More than a width of 992px, the column share its row with the image column
+ * Its maximum width is then divided by two
+ */
+@media (min-width: 992px) {
+    .container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-text-col {
+        max-width: 480px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-text-col {
+        max-width: 570px;
+    }
+}
+
+
+/**
+ * More than a width of 992px, the text column share its row with the image column
+ * The text column has left auto margin or right auto margin, depending if it is on left or right
+ * The image column has no right or left padding, depenfing if it is on left or right so the image
+ * fit untill the border of the window
+ */
+@media (min-width: 992px) {
+    .container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-text-col.vhmavi-text-col-left {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-text-col.vhmavi-text-col-right {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-img-col.vhmavi-img-col-left {
+        padding-left: 0;
+    }
+
+    .container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-img-col.vhmavi-img-col-right {
+        padding-right: 0;
+    }
+}
+
+/**
+ * On small devices
+ * Remove column padding so it fits all the screen
+ * Add margins between two rows
+ */
+@media (max-width: 992px) {
+    .container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-img-col {
+        padding: 0;
+    }
+
+    .container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row {
+        margin: 2rem 0;
+    }
+}
+
+.container.vhmavi-container.vhmavi-text-img-shared-container .row.vhmavi-txt-img-shared-row .vhmavi-img-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

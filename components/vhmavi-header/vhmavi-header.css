@@ -1,0 +1,30 @@
+/**
+ * Add margin to the item following the navbar
+ * As the navbar position is fixed, it is out from the DOM stack
+ * Without this, it would overflow the following content
+ * * means any kind of element
+ */
+ @media (min-width: 349px) {
+    .navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top + * {
+        margin-top: calc(90px + 2rem);
+    }
+}
+
+@media (max-width: 348px) {
+    .navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top + * {
+        margin-top: calc(130px + 2rem);
+    }
+}
+
+/* Brand name reduction on small devices */
+@media (max-width: 485px) {
+    .navbar-light .navbar-brand.navbar-brand {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar-light .navbar-brand.navbar-brand {
+        font-size: 0.7rem;
+    }
+}

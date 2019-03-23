@@ -1,0 +1,32 @@
+/**
+ * vhmavi-form.css
+ * Provide the style of a form
+ */
+
+form.vhmavi-form .btn.btn-outline-vhmavi.vhmavi-submit-btn,
+form.vhmavi-form .btn.btn-outline-vhmavi.vhmavi-submitting-spinner-btn {
+    width: 100%;
+}
+
+/**
+ * Initially, the alert is not displayed
+ * It is displayed once the email has been properly sent, has failes sending
+ * or the newsletter subscription has failed
+ */
+.vhmavi-form .alert.alert-success.vhmavi-form-alert-success,
+.vhmavi-form .alert.alert-danger.vhmavi-form-alert-danger,
+.vhmavi-form .alert.alert-danger.vhmavi-form-alert-danger-newsletter {
+    display: none;
+}
+
+/**
+ * Initially, the spinner button is not displayed
+ * It is displayed once the submit button is clicked
+ */
+ .vhmavi-form .btn.btn-outline-vhmavi.vhmavi-submitting-spinner-btn {
+    display: none;
+}
+
+.vhmavi-form .vhmavi-required-field {
+    color: #e74c3c;
+}

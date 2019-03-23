@@ -1,0 +1,25 @@
+/**
+ * vhmavi-file-input.css
+ * Provide the style of a file input
+ */
+
+.vhmavi-form .form-group .vhmavi-file-input {
+    display: flex;
+    flex-direction: row;
+}
+
+.vhmavi-form .form-group .vhmavi-file-input .vhmavi-file-input-btn {
+    border-radius: 0 0.25rem 0.25rem 0;
+    border-color: #ced4da;
+    border-left: 0;
+}
+
+.vhmavi-form .form-group .vhmavi-file-input .form-control.vhmavi-file-input-text {
+    border-radius:  0.25rem 0 0 0.25rem;
+    background-color: #fff;
+}
+
+/* Display the invlaid feedback */
+.vhmavi-form .form-group .vhmavi-file-input.is-invalid ~ .invalid-feedback {
+    display: block;
+}

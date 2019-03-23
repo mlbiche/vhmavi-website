@@ -1,0 +1,68 @@
+/**
+ * vhmavi-icon.css
+ * Contains the icon font.
+ * It is generated from https://icomoon.io/app and the icon in icon/origin
+ */
+
+@font-face {
+    font-family: 'vhmavi-icon';
+    font-display: block;
+    src:  url('../icon/vhmavi-icon.eot?rj9yam'); /* Path updated */
+    src:  url('../icon/vhmavi-icon.eot?rj9yam#iefix') format('embedded-opentype'), /* Path updated */
+        url('../icon/vhmavi-icon.ttf?rj9yam') format('truetype'), /* Path updated */
+        url('../icon/vhmavi-icon.woff?rj9yam') format('woff'), /* Path updated */
+        url('../icon/vhmavi-icon.svg?rj9yam#vhmavi-icon') format('svg'); /* Path updated */
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'vhmavi-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.vhmavi-icon-class:before {
+    content: "\e900";
+    color: rgb(0, 61, 165); /* Edited */
+}
+
+.vhmavi-icon-facebook .path1:before {
+    content: "\e901";
+    color: rgb(59, 89, 152);
+}
+
+.vhmavi-icon-facebook .path2:before {
+    content: "\e902";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.vhmavi-icon-homework:before {
+    content: "\e903";
+    color: rgb(0, 61, 165); /* Edited */
+}
+
+.vhmavi-icon-knowledge:before {
+    content: "\e904";
+    color: rgb(0, 61, 165); /* Edited */
+}
+
+.vhmavi-icon-paint-palette:before {
+    content: "\e905";
+    color: rgb(0, 61, 165); /* Edited */
+}
+
+.vhmavi-icon-speech-bubble:before {
+    content: "\e906";
+    color: rgb(0, 61, 165); /* Edited */
+}

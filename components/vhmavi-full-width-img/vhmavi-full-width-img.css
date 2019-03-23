@@ -1,0 +1,41 @@
+/**
+ * vhmavi-full-width-img.css
+ * Provide the style of a full screen width image container
+ */
+
+/* Removes the margin and and set the full screen width container */
+.container.vhmavi-container.vhmavi-full-width-img-container {
+    margin: 2rem 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* Remove the row margins */
+.container.vhmavi-container.vhmavi-full-width-img-container .row {
+    margin: 2rem 0;
+}
+
+/* Remove the column margins */
+.container.vhmavi-container.vhmavi-full-width-img-container .row .col.vhmavi-img-col {
+    width: 100%;
+    padding: 0;
+}
+
+/* Adapt the height of the image depending on the screen size */
+@media (min-width: 768px) {
+    .container.vhmavi-container.vhmavi-full-width-img-container .row .col.vhmavi-img-col {
+        height: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container.vhmavi-container.vhmavi-full-width-img-container .row .col.vhmavi-img-col {
+        height: 400px;
+    }
+}
+
+.container.vhmavi-container.vhmavi-full-width-img-container .row .col.vhmavi-img-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

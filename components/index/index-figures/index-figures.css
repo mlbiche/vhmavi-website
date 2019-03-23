@@ -1,0 +1,34 @@
+.container.vhmavi-container.vhmavi-figures-container .vhmavi-figures-headline {
+    font-size: 1.75rem;
+    color: rgb(0, 61, 165);
+}
+
+.container.vhmavi-container.vhmavi-figures-container p.vhmavi-figure {
+    color: rgb(255, 184, 28);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.container.vhmavi-container.vhmavi-figures-container p.vhmavi-figure-description {
+    color: rgb(0, 61, 165);
+    margin: 0;
+}
+
+/* Add vertical bars around the middle column when there are 3 columns */
+@media (min-width: 768px) {
+    .container.vhmavi-figures-container .vhmavi-figures-3-col-middle {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Add a vertical bar between the 2 columns when there are only 2 */
+@media (min-width: 576px) and (max-width: 767px) {
+    .container.vhmavi-figures-container .vhmavi-figures-2-col-right {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+.container.vhmavi-container.vhmavi-figures-container .row .vhmavi-centered-col {
+    padding-bottom: 1rem;
+}

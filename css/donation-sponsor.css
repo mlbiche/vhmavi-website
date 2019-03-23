@@ -1,0 +1,35 @@
+.container.vhmavi-container .row .vhmavi-video-col {
+    display: flex;
+    justify-content: center;
+}
+
+.container.vhmavi-container .row .vhmavi-video-col iframe {
+    width: 100%;
+}
+
+/* Adapt the height of the video depending on the screen size */
+@media (min-width: 768px) {
+    .container.vhmavi-container .row .vhmavi-video-col iframe {
+        height: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container.vhmavi-container .row .vhmavi-video-col iframe {
+        height: 300px;
+    }
+}
+
+.container.vhmavi-container .row h2.vhmavi-donation-sponsor-small-h2 {
+    font-size: 1.25rem;
+}
+
+#vhmavi-img-student-smile {
+    object-position: center 40%;
+}
+
+.container.vhmavi-container .row h5.vhmavi-join-sponsor {
+    text-align: center;
+    color: rgb(255, 184, 28);
+    font-style: italic;
+}

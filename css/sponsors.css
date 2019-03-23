@@ -1,0 +1,15 @@
+.container.vhmavi-container .row.justify-content-center .vhmavi-sponsor-col {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.vhmavi-container .row.justify-content-center .vhmavi-sponsor-col .vhmavi-sponsor-img {
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.container.vhmavi-container .row.justify-content-center .vhmavi-other-sponsors-col p {
+    text-align: center;
+}

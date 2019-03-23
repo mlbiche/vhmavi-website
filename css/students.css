@@ -1,0 +1,13 @@
+.container.vhmavi-container .row h2.vhmavi-students-h2 {
+    font-size: 1.75rem;
+}
+
+#vhmavi-img-student-smile {
+    object-position: center 45%;
+}
+
+@media (max-width: 576px) {
+    #vhmavi-img-student-group {
+        object-position: 35%;
+    }
+}

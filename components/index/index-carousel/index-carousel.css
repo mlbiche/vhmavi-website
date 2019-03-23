@@ -1,0 +1,11 @@
+@media (min-width: 349px) {
+    .navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top + *.carousel {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 348px) {
+    .navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top + *.carousel {
+        margin-top: 130px;
+    }
+}

@@ -1,0 +1,44 @@
+#vhmavi-img-student-reuse {
+    object-position: 50% 60%;
+}
+
+#vhmavi-img-teacher {
+    object-position: center 20%;
+}
+
+#vhmavi-img-student-group {
+    object-position: top;
+}
+
+/* Replace the list bullet with icons */
+ul.vhmavi-icon-list {
+    list-style-type: none;
+}
+
+ul.vhmavi-icon-list li.vhmavi-icon-list-item {
+    position: relative;
+}
+
+ul.vhmavi-icon-list li.vhmavi-icon-list-item i {
+    position: absolute;
+    left: -2.5rem;
+    text-align: center;
+    width: 2.5rem;
+    line-height: inherit;
+}
+
+/* Icon columns */
+.container.vhmavi-container .row .vhmavi-icons-text-col .vhmavi-icon-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    font-size: 3rem;
+}
+
+.container.vhmavi-container .row .vhmavi-icons-text-col p {
+    text-align: center;
+}
+
+.container.vhmavi-container .row .vhmavi-icons-text-col.vhmavi-icons-text-col-last {
+    margin-bottom: 1rem;
+}

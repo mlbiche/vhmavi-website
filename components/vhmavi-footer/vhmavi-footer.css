@@ -1,0 +1,44 @@
+hr.vhmavi-divider {
+    margin: 1rem 5rem 0 5rem;
+}
+
+.vhmavi-footer-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.vhmavi-footer-container .row .col .vhmavi-contact-title {
+    color: rgb(0, 61, 165);
+    font-size: 1rem;
+}
+
+.vhmavi-footer-container p {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+/* On small devices, address is alone on full screen width. Add a bottom margin */
+@media (max-width: 576px) {
+    .vhmavi-address-col {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Center the Facebook logo inside its div */
+.vhmavi-facebook-logo-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Remove the underline on hover */
+.vhmavi-facebook-logo-container a:hover {
+    text-decoration: none;
+}
+
+.vhmavi-facebook-logo-container .vhmavi-icon-facebook {
+    font-size: 2.5rem;
+    display: flex;
+}
