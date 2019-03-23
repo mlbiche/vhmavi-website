@@ -71,10 +71,10 @@
     </div>
     <!-- The click on the send button is catched in the JS corresponding file (volunteer-form.js) -->
     <button class="btn btn-outline-vhmavi vhmavi-submit-btn" type="submit" disabled>
-        Envoyer
+        Candidater
     </button>
     <button class="btn btn-outline-vhmavi vhmavi-submitting-spinner-btn" type="submit" disabled> 
         <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-        Envoi...
+        Candidature en cours...
     </button>
 </form>
