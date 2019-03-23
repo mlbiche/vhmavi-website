@@ -28,7 +28,7 @@
             if ($_SERVER['REQUEST_URI'] == '/index.php'
                 || $_SERVER['REQUEST_URI'] == '/'):
             ?>
-            <li class="nav-item active vhmavi-active">
+            <li class="nav-item active">
             <?php else: ?>
             <li class="nav-item">
             <?php endif ?>
@@ -41,7 +41,7 @@
                 || $_SERVER['REQUEST_URI'] == '/hostel.php'
                 || $_SERVER['REQUEST_URI'] == '/news.php'):
             ?>
-            <li class="nav-item dropdown active vhmavi-active vhmavi-show">
+            <li class="nav-item dropdown active vhmavi-show">
             <?php else: ?>
             <li class="nav-item dropdown vhmavi-show">
             <?php endif ?>
@@ -49,22 +49,52 @@
                     L'école
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="presentation.php">Présentation</a>
+                    <?php if ($_SERVER['REQUEST_URI'] == '/presentation.php'): ?>
+                    <a class="dropdown-item vhmavi-active" href="presentation.php">
+                    <?php else: ?>
+                    <a class="dropdown-item" href="presentation.php">
+                    <?php endif ?>
+                        Présentation
+                    </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="mission.php">Notre mission</a>
+                    <?php if ($_SERVER['REQUEST_URI'] == '/mission.php'): ?>
+                    <a class="dropdown-item vhmavi-active" href="mission.php">
+                    <?php else: ?>
+                    <a class="dropdown-item" href="mission.php">
+                    <?php endif ?>
+                        Notre mission
+                    </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="students.php">Nos élèves</a>
+                    <?php if ($_SERVER['REQUEST_URI'] == '/students.php'): ?>
+                    <a class="dropdown-item vhmavi-active" href="students.php">
+                    <?php else: ?>
+                    <a class="dropdown-item" href="students.php">
+                    <?php endif ?>
+                        Nos élèves
+                    </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="hostel.php">L'internat</a>
+                    <?php if ($_SERVER['REQUEST_URI'] == '/hostel.php'): ?>
+                    <a class="dropdown-item vhmavi-active" href="hostel.php">
+                    <?php else: ?>
+                    <a class="dropdown-item" href="hostel.php">
+                    <?php endif ?>
+                        L'internat
+                    </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="news.php">Les dernières nouvelles</a>
+                    <?php if ($_SERVER['REQUEST_URI'] == '/news.php'): ?>
+                    <a class="dropdown-item vhmavi-active" href="news.php">
+                    <?php else: ?>
+                    <a class="dropdown-item" href="news.php">
+                    <?php endif ?>
+                        Les dernières nouvelles
+                    </a>
                 </div>
             </li>
             <?php
             if ($_SERVER['REQUEST_URI'] == '/team.php'
                 || $_SERVER['REQUEST_URI'] == '/sponsors.php'):
             ?>
-            <li class="nav-item dropdown active vhmavi-active vhmavi-show">
+            <li class="nav-item dropdown active vhmavi-show">
             <?php else: ?>
             <li class="nav-item dropdown vhmavi-show">
             <?php endif ?>
@@ -72,9 +102,21 @@
                     Qui sommes-nous ?
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="team.php">Notre équipe</a>
+                    <?php if ($_SERVER['REQUEST_URI'] == '/team.php'): ?>
+                    <a class="dropdown-item vhmavi-active" href="team.php">
+                    <?php else: ?>
+                    <a class="dropdown-item" href="team.php">
+                    <?php endif ?>
+                        Notre équipe
+                    </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="sponsors.php">Nos partenaires</a>
+                    <?php if ($_SERVER['REQUEST_URI'] == '/sponsors.php'): ?>
+                    <a class="dropdown-item vhmavi-active" href="sponsors.php">
+                    <?php else: ?>
+                    <a class="dropdown-item" href="sponsors.php">
+                    <?php endif ?>
+                        Nos partenaires
+                    </a>
                 </div>
             </li>
             <?php
@@ -82,7 +124,7 @@
                 // || $_SERVER['REQUEST_URI'] == '/become-sponsor.php' // TODO : Uncomment when become-sponsor.php is ready
                 || $_SERVER['REQUEST_URI'] == '/volunteer.php'):
             ?>
-            <li class="nav-item dropdown active vhmavi-active vhmavi-show">
+            <li class="nav-item dropdown active vhmavi-show">
             <?php else: ?>
             <li class="nav-item dropdown vhmavi-show">
             <?php endif ?>
@@ -90,16 +132,34 @@
                     Nous soutenir
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="donation-sponsor.php">Don et parrainage</a>
+                    <?php if ($_SERVER['REQUEST_URI'] == '/donation-sponsor.php'): ?>
+                    <a class="dropdown-item vhmavi-active" href="donation-sponsor.php">
+                    <?php else: ?>
+                    <a class="dropdown-item" href="donation-sponsor.php">
+                    <?php endif ?>
+                        Don et parrainage
+                    </a>
                     <div class="dropdown-divider"></div>
                     <!-- TODO : Uncomment when become-sponsor.php is ready -->
-                    <!-- <a class="dropdown-item" href="become-sponsor.php">Devenir partenaire</a>
+                    <!-- <?php if ($_SERVER['REQUEST_URI'] == '/become-sponsor.php'): ?>
+                    <a class="dropdown-item vhmavi-active" href="become-sponsor.php">
+                    <?php else: ?>
+                    <a class="dropdown-item" href="become-sponsor.php">
+                    <?php endif ?>
+                        Devenir partenaire
+                    </a>
                     <div class="dropdown-divider"></div> -->
-                    <a class="dropdown-item" href="volunteer.php">Devenir bénévole</a>
+                    <?php if ($_SERVER['REQUEST_URI'] == '/volunteer.php'): ?>
+                    <a class="dropdown-item vhmavi-active" href="volunteer.php">
+                    <?php else: ?>
+                    <a class="dropdown-item" href="volunteer.php">
+                    <?php endif ?>
+                        Devenir bénévole
+                    </a>
                 </div>
             </li>
             <?php if ($_SERVER['REQUEST_URI'] == '/contact.php'): ?>
-            <li class="nav-item active vhmavi-active">
+            <li class="nav-item active">
             <?php else: ?>
             <li class="nav-item">
             <?php endif ?>

@@ -150,6 +150,6 @@
     </button>
     <button class="btn btn-outline-vhmavi vhmavi-submitting-spinner-btn" type="submit" disabled> 
         <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-        Envoi du parrainage...
+        Envoi du parrainage en cours...
     </button>
 </form>

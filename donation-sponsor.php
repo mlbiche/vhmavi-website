@@ -34,6 +34,9 @@
                 <h1>Le parrainage</h1>
                 <p>Parrainer un élève de VHMaVi c'est non seulement financer ses études, mais c'est aussi lui apporter une motivation pour sa réussite scolaire et un sentiment d'accompagnement sur le long terme. C'est un soutien inestimable pour nos élèves !</p>
             </div>
+            <div class="col-12 col-lg-7">
+                <h5 class="vhmavi-join-sponsor">Réduisez vos impôts en aidant un élève népalais !</h5>
+            </div>
         </div>
     </div>
     <div class="container vhmavi-container">
