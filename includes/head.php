@@ -27,7 +27,4 @@
 <link rel="stylesheet" href="components/vhmavi-footer/vhmavi-footer.css" />
 
 <!-- Bootstrap stylesheet -->
-<!-- DEVELOPMENT -->
 <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
-<!-- PRODUCTION -->
-<!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /> -->

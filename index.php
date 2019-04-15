@@ -42,7 +42,7 @@
 
     <!--
         Bootstrap and JQuery script loader include
-        NOTE : They are loaded first because JQuery is used by other JS scripts
+        They are loaded first because JQuery is used by other JS scripts
     -->
     <?php include("includes/script-loader.php"); ?>
 

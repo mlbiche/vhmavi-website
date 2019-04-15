@@ -6,11 +6,6 @@
 
 // Resize the image in text with image rows so the image height depends on the text height
 $(window).resize(() => {
-    /**
-     * No use of "this" keyword in the body so we use arrow function
-     * (see IMPORTANT NOTE in index.js for more explanations)
-     */
-    
     $('.row.vhmavi-txt-img-shared-row').each(function() {
         const $vhmaviTextColJqEl = $(this).children('.vhmavi-text-col');
         const $vhmaviImgColJqEl = $(this).children('.vhmavi-img-col');
