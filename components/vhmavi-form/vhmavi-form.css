@@ -23,7 +23,7 @@ form.vhmavi-form .btn.btn-outline-vhmavi.vhmavi-submitting-spinner-btn {
  * Initially, the spinner button is not displayed
  * It is displayed once the submit button is clicked
  */
- .vhmavi-form .btn.btn-outline-vhmavi.vhmavi-submitting-spinner-btn {
+.vhmavi-form .btn.btn-outline-vhmavi.vhmavi-submitting-spinner-btn {
     display: none;
 }
 

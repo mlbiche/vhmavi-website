@@ -33,12 +33,6 @@
             </div>
         </div>
         <div class="row vhmavi-txt-img-shared-row">
-            <!--
-                It uses column ordering
-                order-1 means that the column will be displayed before order-12 on small screens
-                order-lg-1 means that the column will be displayed before order-lg-12 on large screens
-                Without this, it would display two images in a row
-            -->
             <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
                 <img src="img/presentation/little_student.jpg" alt="Une élève de l'école" id="vhmavi-img-little-student" />
             </div>
