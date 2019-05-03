@@ -71,11 +71,8 @@ $('#contact-form-suggested-subject').change(function() {
         // Show the subject input
         $('#contact-form-group-subject').show();
     } else {
-        // If the subject input is required - the previous selected option was the other subject option
-        if ($('#contact-form-subject').prop('required')) {
-            // Hide the subject input
-            $('#contact-form-group-subject').hide();
-        }
+        // Hide the subject input
+        $('#contact-form-group-subject').hide();
     }
 
     // Trigger the change event for the subject input

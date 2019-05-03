@@ -10,9 +10,8 @@ This *README.md* gives a basic review about the architecture and the production 
 
 You can also find :
 
-* An architecture visualization to understand the interaction between the different files : <https://drive.google.com/file/d/1Oqi_PvWfbIbDZ9WIB6cv7WNZ4T9NnITS/view?usp=sharing>.
-* A starter kit to handle this project : <https://docs.google.com/document/d/1pRX6MQbFdC3-9dmt903THP4kVtQ2m_InIwDYSGdBSkY/edit?usp=sharing>.
-* A full documentation introducing each used technology and going through each file : <https://docs.google.com/document/d/1n7EXtI2URRkHR4kFWB9Gl_5c6lgDdszu3PRHfozmpjg/edit?usp=sharing>.
+* A full documentation introducing each used technology and going through each file : <https://docs.google.com/document/d/1n7EXtI2URRkHR4kFWB9Gl_5c6lgDdszu3PRHfozmpjg/edit?usp=sharing>,
+* A full documentation presenting the website page by page : <https://docs.google.com/document/d/1NhGn9YaiqMfsxtOh7w5C2c3fn6eltd4mfCo7Q8GyIT8/edit?usp=sharing>.
 
 ## Tree view
 
@@ -108,7 +107,6 @@ Once the website is ready and need to be pushed for production, please follow th
 * Audit the website on Google Chrome using Lighthouse extension. Every field should be above 90 points. If not, apply the needed correction to have this score.
 * Make a copy of the folder in which you will prepare the environment production.
 * Remove the *icon/origin* folder.
-* Change the includes for including minified CSS and JavaScript files.
 * Minify all the CSS files you have edited using <https://cssminifier.com/>.
 * Minifiy all the JavaScript files you have edited using <https://javascript-minifier.com/>.
 * Remove all the not-minified CSS and JavaScript files.
