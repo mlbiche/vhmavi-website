@@ -61,11 +61,14 @@ export function formSubmitionSubscribe(postService) {
         })
         .always(() => {
             /**
-             * On success or failure, replace the spinner button with the send button and scroll
+             * On success or failure, replace the spinner button with the send button enabled and scroll
              * to the top of the window
              */
             $('.vhmavi-submitting-spinner-btn').hide();
-            $('.vhmavi-submit-btn').show();
+            $(this).show();
+            $(this).prop('disabled', true);
+
+            console.log(this);
 
             $(window).scrollTop($($formHTMLEl).offset().top - 100);
         });
