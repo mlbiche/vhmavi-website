@@ -12,6 +12,11 @@
         <!-- The newsletters list -->
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
+                <a href="http://sh1.sendinblue.com/1zv09n5vsc.html?t=1556895139" target="_blank">
+                    Janvier - Mars 2019
+                </a>
+            </li>
+            <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_sept_dec_2018.pdf" target="_blank">
                     Septembre - Décembre 2018
                 </a>
