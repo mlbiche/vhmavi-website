@@ -8,9 +8,11 @@
  * It realises the asynchronous submition process in the callback
  * All the validations are already done as the user is typing
  * @param postService The post service url
+ * @param initValidityState The validatity state initialisation function
+ *                          It is the function from vhmavi-form-validation.js
  * @returns It returns false to prevent the page reloading
  */
-export function formSubmitionSubscribe(postService) {
+export function formSubmitionSubscribe(postService, initValidityState) {
     // When the submit button is clicked, check the form validity and submit the form asynchronously using AJAX
     $(document).on('click', '.vhmavi-submit-btn', function() {
         // this is the send button. The parent is the form (HTML Element)
@@ -68,7 +70,7 @@ export function formSubmitionSubscribe(postService) {
             $(this).show();
             $(this).prop('disabled', true);
 
-            console.log(this);
+            initValidityState()
 
             $(window).scrollTop($($formHTMLEl).offset().top - 100);
         });
