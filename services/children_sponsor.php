@@ -1,7 +1,7 @@
 <?php
     /**
      * children_sponsor.php
-     * This file process the server-side form submition from donation-sponsor.php.
+     * This file process the server-side form submission from donation-sponsor.php.
      */
     
     include("subscribe_newsletter_mod.php");

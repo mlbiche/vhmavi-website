@@ -1,18 +1,18 @@
 /**
- * vhmavi-form-submition.js
- * Provide the submition process of a form
+ * vhmavi-form-submission.js
+ * Provide the submission process of a form
  */
 
 /**
- * Subscribe to the form submition event
- * It realises the asynchronous submition process in the callback
+ * Subscribe to the form submission event
+ * It realises the asynchronous submission process in the callback
  * All the validations are already done as the user is typing
  * @param postService The post service url
  * @param initValidityState The validatity state initialisation function
  *                          It is the function from vhmavi-form-validation.js
  * @returns It returns false to prevent the page reloading
  */
-export function formSubmitionSubscribe(postService, initValidityState) {
+export function formSubmissionSubscribe(postService, initValidityState) {
     // When the submit button is clicked, check the form validity and submit the form asynchronously using AJAX
     $(document).on('click', '.vhmavi-submit-btn', function() {
         // this is the send button. The parent is the form (HTML Element)

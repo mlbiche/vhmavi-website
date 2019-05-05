@@ -1,6 +1,6 @@
 /**
  * vhmavi-form.js
- * Provide the behaviour of a form - its validation and its submition
+ * Provide the behaviour of a form - its validation and its submission
  */
 
 export { 
@@ -11,18 +11,18 @@ export {
 } from './vhmavi-form-validation.js';
 
 import {
-    formSubmitionSubscribe as fSS
-} from './vhmavi-form-submition.js';
+    formSubmissionSubscribe as fSS
+} from './vhmavi-form-submission.js';
 
 import { 
     initValidityState
 } from './vhmavi-form-validation.js';
 
 /**
- * Initialize the vhmavi-form-submition with the provided POST service and the 
+ * Initialize the vhmavi-form-submission with the provided POST service and the 
  * vhmavi-form-validation validity state initialisation function
- * @param postService The post service url to transmit to the vhmavi-form-submition
+ * @param postService The post service url to transmit to the vhmavi-form-submission
  */
-export function formSubmitionSubscribe(postService) {
+export function formSubmissionSubscribe(postService) {
     fSS(postService, initValidityState);
 }

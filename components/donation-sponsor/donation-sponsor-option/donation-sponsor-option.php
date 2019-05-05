@@ -59,5 +59,5 @@
     </div>
 </div>
 
-<!-- This input contains the selected option in its value for the form submition -->
+<!-- This input contains the selected option in its value for the form submission -->
 <input type="text" id="donation-sponsor-form-sponsoring-option" class="form-control" name="sponsoringOption" value="donation-sponsor-option-project" hidden required>
