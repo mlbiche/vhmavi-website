@@ -86,13 +86,13 @@ You will also find a JavaScript file that updates the figures related to the sch
 
 ### *services*
 
-This folder contains the different server-side services that are called on asynchronous form submitions.
+This folder contains the different server-side services that are called on asynchronous form submissions.
 
-* *children_sponsor.php* is used for the submition of the donation and sponsoring form defined in the component *donation-sponsor-form*. It sends to the administrator an email containing the different information taken by the user. It sends a confirmation email to the user. It subscribes the user to the newsletter if needed. It uses the module *subscribe_newsletter_mod.php*.
-* *send_mail.php* is used for the submition of the contact form defined in the page *contact.php*. It sends to the administrator containing an email the different information taken by the user. It sends a copy of this email to the user if needed.
+* *children_sponsor.php* is used for the submission of the donation and sponsoring form defined in the component *donation-sponsor-form*. It sends to the administrator an email containing the different information taken by the user. It sends a confirmation email to the user. It subscribes the user to the newsletter if needed. It uses the module *subscribe_newsletter_mod.php*.
+* *send_mail.php* is used for the submission of the contact form defined in the page *contact.php*. It sends to the administrator containing an email the different information taken by the user. It sends a copy of this email to the user if needed.
 * *subscribe_newsletter_mod.php* is a module that definie a function for all the newsletter subscription process.
 * *subscribe_newsletter.php* is used for the newsletter sbscription from the form defined in the component *news-newsletter-form*.
-* *volunteer_application.php* is used for the submition of the volunteer application form defined in the component *volunteer-form*. It sends to the administrator an email containing the different information taken by the user. It sends a confirmation email to the user.
+* *volunteer_application.php* is used for the submission of the volunteer application form defined in the component *volunteer-form*. It sends to the administrator an email containing the different information taken by the user. It sends a confirmation email to the user.
 
 ### Root
 

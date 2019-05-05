@@ -25,7 +25,7 @@ export function fileInputChangeSubscription(fileInputContainerSelector, extensio
         // We open the file browser
         $fileInputJqEl.click();
 
-        // We return false to prevent the form submition
+        // We return false to prevent the form submission
         return false;
     });
 

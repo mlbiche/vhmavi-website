@@ -1,7 +1,7 @@
 <?php
     /**
      * subscribe_newsletter.php
-     * This file process the server-side form submition from news.php.
+     * This file process the server-side form submission from news.php.
      */
 
     include("subscribe_newsletter_mod.php");

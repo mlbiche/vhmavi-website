@@ -1,7 +1,7 @@
 import {
     initValidityState,
     inputsValidationSubscribe,
-    formSubmitionSubscribe
+    formSubmissionSubscribe
 } from '../components/vhmavi-form/vhmavi-form.js';
 
 // Initialise the validity state array once the document is ready
@@ -10,8 +10,8 @@ initValidityState();
 // Subscribe to the input validation on change
 inputsValidationSubscribe();
 
-// Subscribe to the form submition event, providing the post service
-formSubmitionSubscribe('services/send_mail.php');
+// Subscribe to the form submission event, providing the post service
+formSubmissionSubscribe('services/send_mail.php');
 
 // On suggested subject change
 $('#contact-form-suggested-subject').change(function() {
