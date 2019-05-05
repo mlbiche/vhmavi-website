@@ -5,7 +5,7 @@ import {
     inputsValidationSubscribe,
     validators,
     validatorsParameters,
-    formSubmitionSubscribe
+    formSubmissionSubscribe
 } from '../../vhmavi-form/vhmavi-form.js';
 
 // Add the phone input validator to the form
@@ -22,8 +22,8 @@ initValidityState();
 // Subscribe to the input validation on change
 inputsValidationSubscribe();
 
-// Subscribe to the form submition event, providing the post service
-formSubmitionSubscribe('services/children_sponsor.php');
+// Subscribe to the form submission event, providing the post service
+formSubmissionSubscribe('services/children_sponsor.php');
 
 // On person button click
 $('#sponsor-type-person').click(function() {

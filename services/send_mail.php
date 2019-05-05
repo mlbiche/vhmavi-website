@@ -1,7 +1,7 @@
 <?php
     /**
      * send_mail.php
-     * This file process the server-side form submition from contact.php.
+     * This file process the server-side form submission from contact.php.
      */
 
     /**

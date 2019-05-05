@@ -1,7 +1,7 @@
 <?php
     /**
      * volunteer_application.php
-     * This file process the server-side form submition from volunteer.php.
+     * This file process the server-side form submission from volunteer.php.
      */
 
     /**

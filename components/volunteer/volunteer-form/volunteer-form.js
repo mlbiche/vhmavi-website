@@ -7,7 +7,7 @@ import {
     inputsValidationSubscribe,
     validators,
     validatorsParameters,
-    formSubmitionSubscribe
+    formSubmissionSubscribe
 } from '../../vhmavi-form/vhmavi-form.js';
 
 // Subscribe to the file input event
@@ -23,5 +23,5 @@ initValidityState();
 // Subscribe to the input validation on change
 inputsValidationSubscribe();
 
-// Subscribe to the form submition event
-formSubmitionSubscribe('services/volunteer_application.php');
+// Subscribe to the form submission event
+formSubmissionSubscribe('services/volunteer_application.php');
