@@ -32,6 +32,23 @@ export function inputsValidationSubscribe() {
 }
 
 /**
+ * Check if the form is valid or not
+ * @returns True if the form is valid ; false otherwise
+ */
+export function isFormValid() {
+    let isValid = true;
+
+    // Checks that all the input are valid
+    for (const validityState of Object.keys(validityStates)) {
+        // If an input is invalid, the form is invalid
+        if (!validityStates[validityState])
+            isValid = false;
+    }
+
+    return isValid;
+}
+
+/**
  * Validate the input that just changed
  * @param $inputJqEl The input that just changes (JQuery Element)
  */
@@ -100,21 +117,4 @@ function setValidInput($inputJqEl) {
     // Remove the is-invalid class from the input so it is no longer displayed as invalid
     if ($inputJqEl.hasClass('is-invalid'))
         $inputJqEl.removeClass('is-invalid');
-}
-
-/**
- * Check if the form is valid or not
- * @returns True if the form is valid ; false otherwise
- */
-function isFormValid() {
-    let isValid = true;
-
-    // Checks that all the input are valid
-    for (const validityState of Object.keys(validityStates)) {
-        // If an input is invalid, the form is invalid
-        if (!validityStates[validityState])
-            isValid = false;
-    }
-
-    return isValid;
 }
