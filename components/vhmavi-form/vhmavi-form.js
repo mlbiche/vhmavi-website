@@ -15,7 +15,8 @@ import {
 } from './vhmavi-form-submission.js';
 
 import { 
-    initValidityState
+    initValidityState,
+    isFormValid
 } from './vhmavi-form-validation.js';
 
 /**
@@ -24,5 +25,5 @@ import {
  * @param postService The post service url to transmit to the vhmavi-form-submission
  */
 export function formSubmissionSubscribe(postService) {
-    fSS(postService, initValidityState);
+    fSS(postService, initValidityState, isFormValid);
 }
