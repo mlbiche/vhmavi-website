@@ -17,11 +17,22 @@
     $done = 0;
     $newsletterSubscriptionFailed = 1;
 
-    // Check that all the form input that are required are provided
-    if (isset($_POST['firstName'], $_POST['lastName'], $_POST['associationName'],
-                $_POST['associationFirstName'], $_POST['associationLastName'], $_POST['email'],
-                $_POST['phone'], $_POST['address'], $_POST['postalCode'], $_POST['city'],
-                $_POST['sponsoringOption'], $_POST['totalAmount'])) {
+    /**
+     * Check that all the form input that are required are provided, that the email input is an email,
+     * that the phone input is a phone number, that the postal code input is a postal code
+     */
+    if (((!empty($_POST['firstName']) && !empty($_POST['lastName']))
+                xor (!empty($_POST['associationName']) && !empty($_POST['associationFirstName'])
+                        && !empty($_POST['associationLastName'])))
+            // Check the validity of the email
+            && !empty($_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)
+            // Check the validity of the phone
+            && !empty($_POST['phone']) && strlen($_POST['phone']) == 10 && ctype_digit($_POST['phone'])
+            && !empty($_POST['address'])
+            // Check the validity of the postal code
+            && !empty($_POST['postalCode']) && ctype_digit($_POST['postalCode'])
+            && !empty($_POST['city']) && !empty($_POST['sponsoringOption'])
+            && !empty($_POST['totalAmount']) && ctype_digit($_POST['totalAmount'])) {
         $to = "vhmavi@gmail.com";
 
         // Preparing the subject
@@ -162,15 +173,18 @@ Type de don/parrainage : ";
 
             /**
              * If the sponsor want to subscribe to the newsletter
-             * If the subscription fails, nothing is done...
+             * If the subscription fails, it reinitialise the newsletter subscription failure flag
+             * in order to display the newsletter alert...
              */
             if (isset($_POST['subscribeNewsletter'])) {
-                if ($_POST['firstName'] !== '' &&  $_POST['lastName'] !== '')
+                if (!empty($_POST['firstName']) &&  !empty($_POST['lastName']))
                     $newsletterSubscriptionFailed= subscribeNewsletter($_POST['email'], $_POST['firstName'], $_POST['lastName'], 3);
-                else if ($_POST['associationName'] !== '' && $_POST['associationFirstName'] !== ''
-                            && $_POST['associationLastName'] !== '')
+                else if (!empty($_POST['associationName']) && empty($_POST['associationFirstName'])
+                            && !empty($_POST['associationLastName']))
                     $newsletterSubscriptionFailed = subscribeNewsletter($_POST['email'], $_POST['associationFirstName'],
                                         $_POST['associationLastName'], 3);
+            } else {
+                $newsletterSubscriptionFailed = 0;
             }
         }
     }

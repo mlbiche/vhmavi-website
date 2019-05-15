@@ -14,9 +14,11 @@
     // The done variable is used to check that the email was successfully sent or not
     $done = 0;
     
-    // Check that all the form input that are required are provided
-    if (isset($_POST['firstName'], $_POST['lastName'], $_POST['email'], $_POST['subject-suggested'],
-                $_POST['subject'], $_POST['message'])) {
+    // Check that all the form input that are required are provided and that the email input is an email
+    if (!empty($_POST['firstName']) && !empty($_POST['lastName'])
+            // Check the validity of the email
+            && !empty($_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)
+            && !empty($_POST['subject']) && !empty($_POST['message'])) {
         $to = "vhmavi@gmail.com";
 
         // Preparing the subject
