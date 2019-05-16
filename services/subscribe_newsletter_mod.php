@@ -4,9 +4,6 @@
      * This file provide a function that process the subscription to the newsletter.
      */
 
-    // Define the API KEY constant
-    define('API_KEY', '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');
-
     /**
      * Subscribe a user to the school newsletter
      * @param $email The user email to subscribe
@@ -16,8 +13,11 @@
      * @return 1 if the subscription has failed ; 0 otherwise
      */
     function subscribeNewsletter($email, $firstName, $lastName, $listId) {
+        // Load the SendInBlue Api config
+        $sendInBlueApiConfig = loadSendInBlueAPIConfig();
+
         // Initialise the cURL session
-        $curl = curl_init('https://api.sendinblue.com/v3/contacts');
+        $curl = curl_init($sendInBlueApiConfig['apiURL'] . 'contacts');
 
         // Prepare the body
         $body = array(
@@ -38,7 +38,7 @@
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HTTPHEADER => array(
                 'content-type: application/json',
-                'api-key: ' . API_KEY
+                'api-key: ' . $sendInBlueApiConfig['apiKey']
             )
         ));
 
@@ -80,5 +80,19 @@
                 return 1;
             }
         }
+    }
+
+    /**
+     * Read the config file to get the SendInBlue API config
+     * @return The SendInBlue API config
+     */
+    function loadSendInBlueAPIConfig() {
+        // Get the config file content
+        $configFileContent = file_get_contents('../config/config.json');
+
+        // Decode the config file
+        $configJSON = json_decode($configFileContent, true);
+
+        return $configJSON['sendInBlueApi'];
     }
 ?>
