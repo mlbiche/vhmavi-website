@@ -125,7 +125,7 @@
         <!-- Display the total amount in the label -->
         <label>
             Montant total : 
-            <label id="donation-sponsor-form-total-amount-lab">10</label>€<label id="donation-sponsor-form-each-month-lab">/mois</label>
+            <label id="donation-sponsor-form-total-amount-lab">10</label>€<label id="donation-sponsor-form-sponsoring-total-amount-lab">/mois + 10€ de frais de fonctionnement</label>
         </label>
         <!-- Add the total amount in the input for the form submission -->
         <input type="text" class="form-control" id="donation-sponsor-form-total-amount-input" name="totalAmount" value="10" hidden required>

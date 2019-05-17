@@ -101,9 +101,9 @@ function updateTotalAmount(totalAmount, eachMonth) {
 
     // Show or hide the each month label
     if (eachMonth)
-        $('#donation-sponsor-form-each-month-lab').show();
+        $('#donation-sponsor-form-sponsoring-total-amount-lab').show();
     else
-        $('#donation-sponsor-form-each-month-lab').hide();
+        $('#donation-sponsor-form-sponsoring-total-amount-lab').hide();
 }
 
 /**
