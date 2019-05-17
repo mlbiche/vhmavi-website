@@ -6,7 +6,7 @@
 
 This project was initially realised on January and Febrary 2019 by Thibaud Malbert, a volunteer from the school. It is designed for the nepalese school Victor Hugo Manjushree Vidyapith, in Chapali - Budhanilkanta municipality - Katmandou.
 
-This *README.md* gives a basic review about the architecture and the production environment.
+This *README.md* gives a basic review about the architecture.
 
 You can also find :
 
@@ -97,16 +97,3 @@ This folder contains the different server-side services that are called on async
 ### Root
 
 In the root folder, you will find all the PHP/HTML files for each pages. Those files contains HTML code, combined with some PHP for server-side preprocessing.
-
-## Production
-
-Once the website is ready and need to be pushed for production, please follow the following rules :
-
-* Resize images. Use <https://resizeimage.net/> to resize the new images to the correct size. Images can be 4000 pixels or more wide whereas only a width of 1500 or 900 pixel is enough. Check the size of the displayed image on your browser and resize image to dimensions just above (respecting the ratio !).
-* Compress images. Use <https://imageoptim.com/online> to compress the resized images.
-* Audit the website on Google Chrome using Lighthouse extension. Every field should be above 90 points. If not, apply the needed correction to have this score.
-* Make a copy of the folder in which you will prepare the environment production.
-* Remove the *icon/origin* folder.
-* Minify all the CSS files you have edited using <https://cssminifier.com/>.
-* Minifiy all the JavaScript files you have edited using <https://javascript-minifier.com/>.
-* Remove all the not-minified CSS and JavaScript files.

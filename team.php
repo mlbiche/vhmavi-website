@@ -49,11 +49,11 @@
     <!-- Bootstrap and JQuery script loader include -->
     <?php include("includes/script-loader.php"); ?>
 
-    <!-- Specific script loading -->
-    <script src="js/team.js"></script>
-
     <!-- Accordion script loading -->
     <script src="components/vhmavi-accordion/vhmavi-accordion.js"></script>
+
+    <!-- Team direction script loading-->
+    <script src="components/team/team-direction/team-direction.js"></script>
     
     <!-- School data script loading -->
     <script src="js/school-figures.js"></script>
