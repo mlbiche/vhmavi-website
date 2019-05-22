@@ -73,7 +73,6 @@
             <div class="col-12 col-lg-9">
                 <h2>L'association ASVHMAVI Nepal</h2>
                 <p>Les dons et parrainages (dons mensuels) s'effectuent auprès d'une association française, ASVHMAVI Nepal, basée à Lyon. Ainsi, après déduction d'impôts, votre don ne vous coûte réellement que 34% de son montant.</p>
-                <p>Dans le cadre d'un don ou d'un parrainage, celui-ci doit être accompagné d'un chèque de 10 € libellé au nom de ASVHMAVI correspondant à la cotisation initiale et la participation aux frais de fonctionnement.</p>
                 <p>Les parrainages sont sans engagement et peuvent être résiliés à tout moment sur demande.</p>
             </div>
             <div class="col-12 col-lg-7">
