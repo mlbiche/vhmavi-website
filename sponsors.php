@@ -86,6 +86,11 @@
                     <img src="img/sponsors/bolomoy.jpg" class="vhmavi-sponsor-img" alt="Association Bolomoy" />
                 </a>
             </div>
+            <div class="col-9 col-md-4 col-lg-3 vhmavi-sponsor-col" id="vhmavi-col-gse-foundation">
+                <a href="http://www.gsefoundation.com/" target="_blank" rel="noopener noreferer">
+                    <img src="img/sponsors/gse_foundation.png" class="vhmavi-sponsor-img" alt="GSE Foundation" />
+                </a>
+            </div>
             <div class="col-12 col-lg-9 vhmavi-other-sponsors-col">
                 <p>Et aussi :</p>
                 <p>Association Ouvre Les Mains <em>(Salon-en-Provence)</em></p>

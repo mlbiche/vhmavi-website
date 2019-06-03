@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.container.vhmavi-container .row.justify-content-center .vhmavi-sponsor-col#vhmavi-col-gse-foundation {
+    background: #21428C;
+}
+
 .container.vhmavi-container .row.justify-content-center .vhmavi-sponsor-col .vhmavi-sponsor-img {
     max-height: 200px;
     max-width: 100%;
