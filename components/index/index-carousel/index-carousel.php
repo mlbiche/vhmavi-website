@@ -9,11 +9,11 @@
         It indicates on which picture of the carousel we are
     -->
     <ol class="carousel-indicators">
-      <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#homeCarousel" data-slide-to="1"></li>
-      <li data-target="#homeCarousel" data-slide-to="2"></li>
-      <li data-target="#homeCarousel" data-slide-to="3"></li>
-      <li data-target="#homeCarousel" data-slide-to="4"></li>
+        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#homeCarousel" data-slide-to="1"></li>
+        <li data-target="#homeCarousel" data-slide-to="2"></li>
+        <li data-target="#homeCarousel" data-slide-to="3"></li>
+        <li data-target="#homeCarousel" data-slide-to="4"></li>
     </ol>
 
     <!-- Carousel pictures -->
@@ -41,12 +41,21 @@
     -->
     <!-- Previous -->
     <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
     </a>
     <!-- Next -->
     <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
     </a>
+
+    <!--
+        Carousel down
+        It is a down chevron. Its purpose is to invite the user to scroll down. On click, the page scroll to the
+        bottom of the carousel.
+    -->
+    <div class="vhmavi-carousel-control-down">
+        <span class="vhmavi-carousel-control-down-icon" aria-hidden="true"></span>
+    </div>
 </div>

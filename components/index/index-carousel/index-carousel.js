@@ -23,3 +23,8 @@ $(window).resize(function() {
  * (ex : when we reopen our browser keeping the tabs active or quick refreshing the page)
  */
 $(window).trigger('resize');
+
+// Scroll down to the index description on carousel control down click
+$('.vhmavi-carousel-control-down').click(() => {
+    $('html, body').animate({ scrollTop: $('#homeCarousel').height() }, 750);
+});

@@ -6242,7 +6242,7 @@ a.close.disabled {
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0; /* Edited */
   left: 0;
   z-index: 15;
   display: -ms-flexbox;
@@ -6250,8 +6250,7 @@ a.close.disabled {
   -ms-flex-pack: center;
   justify-content: center;
   padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin: 1rem 15% 0 15%; /* Edited */
   list-style: none;
 }
 
