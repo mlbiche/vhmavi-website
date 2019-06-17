@@ -69,6 +69,8 @@
             * Champs requis
         </small>
     </div>
+    <!-- The reCAPTACHA V2 -->
+    <div id="vhmavi-recaptcha-container"></div>
     <!-- The click on the send button is catched in the JS corresponding file (volunteer-form.js) -->
     <button class="btn btn-outline-vhmavi vhmavi-submit-btn" type="submit" disabled>
         Candidater

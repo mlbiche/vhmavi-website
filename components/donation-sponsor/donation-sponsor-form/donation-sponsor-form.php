@@ -144,7 +144,9 @@
             * Champs requis
         </small>
     </div>
-    <!-- The click on the send button is catched in the JS corresponding file -->
+    <!-- The reCAPTACHA V2 -->
+    <div id="vhmavi-recaptcha-container"></div>
+    <!-- The click on the send button is catched in the JS corresponding file (donation-sponsor-form.js) -->
     <button class="btn btn-outline-vhmavi vhmavi-submit-btn" type="submit" disabled>
         Parrainer !
     </button>

@@ -14,6 +14,12 @@
 
     <!-- Form stylesheet -->
     <link rel="stylesheet" href="components/vhmavi-form/vhmavi-form.css" />
+
+    <!--
+        reCAPTCHA V2 script loading for form protection
+        It has to be placed in the head tag as it is loaded asynchronously and defered (async defer)
+    -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!-- Header include -->
@@ -122,6 +128,8 @@
                             * Champs requis
                         </small>
                     </div>
+                    <!-- The reCAPTACHA V2 -->
+                    <div id="vhmavi-recaptcha-container"></div>
                     <!-- The click on the send button is catched in the JS corresponding file -->
                     <button class="btn btn-outline-vhmavi vhmavi-submit-btn" type="submit" disabled>
                         Envoyer

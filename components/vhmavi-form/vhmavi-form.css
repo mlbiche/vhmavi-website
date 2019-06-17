@@ -21,7 +21,7 @@ form.vhmavi-form .btn.btn-outline-vhmavi.vhmavi-submitting-spinner-btn {
 
 /**
  * Initially, the spinner button is not displayed
- * It is displayed once the submit button is clicked
+ * It is displayed once the reCAPTCHA is validated
  */
 .vhmavi-form .btn.btn-outline-vhmavi.vhmavi-submitting-spinner-btn {
     display: none;
@@ -29,4 +29,13 @@ form.vhmavi-form .btn.btn-outline-vhmavi.vhmavi-submitting-spinner-btn {
 
 .vhmavi-form .vhmavi-required-field {
     color: #e74c3c;
+}
+
+/**
+ * Initially, the reCAPTCHA container is not displayed
+ * It is displayed once the submit button is clicked
+ */
+.vhmavi-form #vhmavi-recaptcha-container {
+    display: none;
+    justify-content: center;
 }

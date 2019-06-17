@@ -93,6 +93,8 @@ This folder contains the different server-side services that are called on async
 * *subscribe_newsletter_mod.php* is a module that definie a function for all the newsletter subscription process.
 * *subscribe_newsletter.php* is used for the newsletter sbscription from the form defined in the component *news-newsletter-form*.
 * *volunteer_application.php* is used for the submission of the volunteer application form defined in the component *volunteer-form*. It sends to the administrator an email containing the different information taken by the user. It sends a confirmation email to the user.
+* *read-config.php* is a module that define a function for reading an entry in the *config.json* file.
+* *recaptcha_validation* is used to process a server-side Google reCAPTCHA validation.
 
 ### Root
 

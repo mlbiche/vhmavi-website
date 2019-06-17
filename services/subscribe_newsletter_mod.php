@@ -4,6 +4,8 @@
      * This file provide a function that process the subscription to the newsletter.
      */
 
+    include("read_config.php");
+
     /**
      * Subscribe a user to the school newsletter
      * @param $email The user email to subscribe
@@ -14,7 +16,7 @@
      */
     function subscribeNewsletter($email, $firstName, $lastName, $listId) {
         // Load the SendInBlue Api config
-        $sendInBlueApiConfig = loadSendInBlueAPIConfig();
+        $sendInBlueApiConfig = readConfig('sendInBlueApi');
 
         // Initialise the cURL session
         $curl = curl_init($sendInBlueApiConfig['apiURL'] . 'contacts');
@@ -80,19 +82,5 @@
                 return 1;
             }
         }
-    }
-
-    /**
-     * Read the config file to get the SendInBlue API config
-     * @return The SendInBlue API config
-     */
-    function loadSendInBlueAPIConfig() {
-        // Get the config file content
-        $configFileContent = file_get_contents('../config/config.json');
-
-        // Decode the config file
-        $configJSON = json_decode($configFileContent, true);
-
-        return $configJSON['sendInBlueApi'];
     }
 ?>
