@@ -11,7 +11,7 @@ initValidityState();
 inputsValidationSubscribe();
 
 // Subscribe to the form submission event, providing the post service
-formSubmissionSubscribe('services/send_mail.php');
+formSubmissionSubscribe('services/send_mail.php', 'ContactForm');
 
 // On suggested subject change
 $('#contact-form-suggested-subject').change(function() {

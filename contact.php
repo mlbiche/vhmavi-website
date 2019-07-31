@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Nous contacter - Victor Hugo Manjushree Vidyapith</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144927724-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144927724-1');
+    </script>
+    
+    <title>Nous contacter - Victor Hugo Manjushree Vidyapith - VHMaVi</title>
 
     <!-- Meta description for SEO -->
-    <meta name="description" content="Victor Hugo Manjushree Vidyapith, une école népalaise pour une éducation de qualité et gratuite." />
+    <meta name="description" content="Victor Hugo Manjushree Vidyapith, aussi appelée VHMaVi, est une école népalaise qui fournit une éducation gratuite de qualité." />
+
+    <!-- Canonical link to reference the master copy of the URL to SEO -->
+    <link rel="canonical" href="http://vhmavi.edu.np/contact.php" /> 
 
     <!-- Common head include -->
     <?php include("includes/head.php"); ?>

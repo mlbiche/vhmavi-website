@@ -24,4 +24,4 @@ initValidityState();
 inputsValidationSubscribe();
 
 // Subscribe to the form submission event
-formSubmissionSubscribe('services/volunteer_application.php');
+formSubmissionSubscribe('services/volunteer_application.php', 'VolunteerForm');

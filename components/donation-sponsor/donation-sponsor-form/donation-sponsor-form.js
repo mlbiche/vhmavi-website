@@ -23,7 +23,7 @@ initValidityState();
 inputsValidationSubscribe();
 
 // Subscribe to the form submission event, providing the post service
-formSubmissionSubscribe('services/children_sponsor.php');
+formSubmissionSubscribe('services/children_sponsor.php', 'DonationForm');
 
 // On person button click
 $('#sponsor-type-person').click(function() {

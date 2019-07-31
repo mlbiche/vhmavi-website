@@ -12,9 +12,10 @@
  *                          It is the function from vhmavi-form-validation.js
  * @param isFormValid The form validity check function
  *                    It is the function from vhmavi-form-validation.js
+ * @param gaEventCategory The event category use for Google Analytics event tracking
  * @returns It returns false to prevent the page reloading
  */
-export function formSubmissionSubscribe(postService, initValidityState, isFormValid) {
+export function formSubmissionSubscribe(postService, initValidityState, isFormValid, gaEventCategory) {
     /**
      * When the submit button is clicked, check the form validity and show the reCAPTCHA to prevent
      * bots and spam
@@ -29,15 +30,24 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
         $('.vhmavi-form-alert-success').hide();
         $('.vhmavi-form-alert-danger').hide();
         $('.vhmavi-form-alert-danger-newsletter').hide();
-        
+
+        // Create the Google Analytics tracker for the further events tracking
+        ga('create', 'UA-144927724-1', 'auto');
+
         // Check if the form is valid. It occurs when the user remove the disable property from the button
         if (!isFormValid()) {
             // Reinitialise the full items of the form
             fullReinitForm(initValidityState, $formHTMLEl);
 
+            // Send the invalid forced form submission event on Google Analytics
+            ga('send', 'event', gaEventCategory, 'invalidForcedSubmit');
+
             return false;
         }
-        
+
+        // Send the valid form submission click event on Google Analytics
+        ga('send', 'event', gaEventCategory, 'validSubmitClick');
+
         // Hide the submit button
         $(this).hide();
 
@@ -69,6 +79,9 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
          * @param gReCAPTCHAResponse The reCAPTCHA response sent from Google to check server-side
          */
         function onReCAPTCHAValidation(gReCAPTCHAResponse) {
+            // Send the front reCAPTCHA validation event on Google Analytics
+            ga('send', 'event', gaEventCategory, 'frontReCAPTCHAValidate');
+
             // Server-side check the reCAPTCHA response
             $.post({
                 url: 'services/recaptcha_validation.php',
@@ -82,6 +95,9 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
                     // Show the spinner buton
                     $('.vhmavi-submitting-spinner-btn').show();
 
+                    // Send the back reCAPTCHA validation event on Google Analytics
+                    ga('send', 'event', gaEventCategory, 'backReCAPTCHAValidate');
+
                     // Submit the form
                     formSubmissionAfterReCAPTCHA();
                 }
@@ -91,6 +107,10 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
                  * the form to let the user retry
                  */
                 showDangerAlertWithBasicReinit(initValidityState, $formHTMLEl);
+
+                // Send the back reCAPTCHA failure event on Google Analytics
+                ga('send', 'event', gaEventCategory, 'backReCAPTCHAFailure');
+
             });
         }
 
@@ -109,12 +129,18 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
                         // The email has been properly sent so we show the success alert
                         $('.vhmavi-form-alert-success').show();
                         
+                        // Send the submit success event on Google Analytics
+                        ga('send', 'event', gaEventCategory, 'submitSuccess');
+
                         // Reinitialise the form
                         fullReinitForm(initValidityState, $formHTMLEl);
     
                         if (data.newsletterSubscriptionFailed) {
                             // The newsletter subscription has failed so we show a special danger alert
                             $('.vhmavi-form-alert-danger-newsletter').show();
+                            
+                            // Send the newsletter subscription failure event on Google Analytics
+                            ga('send', 'event', gaEventCategory, 'newsletterSubscriptionFailure');
                         }
                     } else {
                         /**
@@ -122,6 +148,9 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
                          * the form to let the user retry
                          */
                         showDangerAlertWithBasicReinit(initValidityState, $formHTMLEl);
+                        
+                        // Send the submit done failure event on Google Analytics
+                        ga('send', 'event', gaEventCategory, 'submitDoneFailure');
                     }
                 },
                 dataType: 'json',
@@ -133,6 +162,9 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
                  * the form to let the user retry
                  */
                 showDangerAlertWithBasicReinit(initValidityState, $formHTMLEl);
+                
+                // Send the submit back failure event on Google Analytics
+                ga('send', 'event', gaEventCategory, 'submitBackFailure');
             });
         }
     });

@@ -23,7 +23,8 @@ import {
  * Initialize the vhmavi-form-submission with the provided POST service and the 
  * vhmavi-form-validation validity state initialisation function
  * @param postService The post service url to transmit to the vhmavi-form-submission
+ * @param gaEventCategory The event category use for Google Analytics event tracking
  */
-export function formSubmissionSubscribe(postService) {
-    fSS(postService, initValidityState, isFormValid);
+export function formSubmissionSubscribe(postService, gaEventCategory) {
+    fSS(postService, initValidityState, isFormValid, gaEventCategory);
 }

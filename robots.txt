@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: http://vhmavi.edu.np/sitemap.xml

@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="css/styles.css" />
 
 <!-- Icon font -->
-<link rel="preload" href="icon/vhmavi-icon.ttf" as="font" />
+<link href="icon/vhmavi-icon.ttf" as="font" />
 
 <!-- Icon stylesheet -->
 <link rel="stylesheet" href="css/vhmavi-icon.css" />

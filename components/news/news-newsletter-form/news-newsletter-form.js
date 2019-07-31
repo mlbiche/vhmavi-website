@@ -11,4 +11,4 @@ initValidityState();
 inputsValidationSubscribe();
 
 // Subscribe to the form submission event
-formSubmissionSubscribe('services/subscribe_newsletter.php');
+formSubmissionSubscribe('services/subscribe_newsletter.php', 'NewsletterForm');
