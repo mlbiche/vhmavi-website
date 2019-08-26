@@ -32,7 +32,7 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
         $('.vhmavi-form-alert-danger-newsletter').hide();
 
         // Create the Google Analytics tracker for the further events tracking
-        ga('create', 'UA-144927724-1', 'auto');
+        typeof ga === 'function' && ga('create', 'UA-144927724-1', 'auto');
 
         // Check if the form is valid. It occurs when the user remove the disable property from the button
         if (!isFormValid()) {
@@ -40,13 +40,13 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
             fullReinitForm(initValidityState, $formHTMLEl);
 
             // Send the invalid forced form submission event on Google Analytics
-            ga('send', 'event', gaEventCategory, 'invalidForcedSubmit');
+            typeof ga === 'function' && ga('send', 'event', gaEventCategory, 'invalidForcedSubmit');
 
             return false;
         }
 
         // Send the valid form submission click event on Google Analytics
-        ga('send', 'event', gaEventCategory, 'validSubmitClick');
+        typeof ga === 'function' && ga('send', 'event', gaEventCategory, 'validSubmitClick');
 
         // Hide the submit button
         $(this).hide();
@@ -80,7 +80,7 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
          */
         function onReCAPTCHAValidation(gReCAPTCHAResponse) {
             // Send the front reCAPTCHA validation event on Google Analytics
-            ga('send', 'event', gaEventCategory, 'frontReCAPTCHAValidate');
+            typeof ga === 'function' && ga('send', 'event', gaEventCategory, 'frontReCAPTCHAValidate');
 
             // Server-side check the reCAPTCHA response
             $.post({
@@ -96,7 +96,7 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
                     $('.vhmavi-submitting-spinner-btn').show();
 
                     // Send the back reCAPTCHA validation event on Google Analytics
-                    ga('send', 'event', gaEventCategory, 'backReCAPTCHAValidate');
+                    typeof ga === 'function' && ga('send', 'event', gaEventCategory, 'backReCAPTCHAValidate');
 
                     // Submit the form
                     formSubmissionAfterReCAPTCHA();
@@ -109,7 +109,7 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
                 showDangerAlertWithBasicReinit(initValidityState, $formHTMLEl);
 
                 // Send the back reCAPTCHA failure event on Google Analytics
-                ga('send', 'event', gaEventCategory, 'backReCAPTCHAFailure');
+                typeof ga === 'function' && ga('send', 'event', gaEventCategory, 'backReCAPTCHAFailure');
 
             });
         }
@@ -130,7 +130,7 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
                         $('.vhmavi-form-alert-success').show();
                         
                         // Send the submit success event on Google Analytics
-                        ga('send', 'event', gaEventCategory, 'submitSuccess');
+                        typeof ga === 'function' && ga('send', 'event', gaEventCategory, 'submitSuccess');
 
                         // Reinitialise the form
                         fullReinitForm(initValidityState, $formHTMLEl);
@@ -140,7 +140,7 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
                             $('.vhmavi-form-alert-danger-newsletter').show();
                             
                             // Send the newsletter subscription failure event on Google Analytics
-                            ga('send', 'event', gaEventCategory, 'newsletterSubscriptionFailure');
+                            typeof ga === 'function' && ga('send', 'event', gaEventCategory, 'newsletterSubscriptionFailure');
                         }
                     } else {
                         /**
@@ -150,7 +150,7 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
                         showDangerAlertWithBasicReinit(initValidityState, $formHTMLEl);
                         
                         // Send the submit done failure event on Google Analytics
-                        ga('send', 'event', gaEventCategory, 'submitDoneFailure');
+                        typeof ga === 'function' && ga('send', 'event', gaEventCategory, 'submitDoneFailure');
                     }
                 },
                 dataType: 'json',
@@ -164,7 +164,7 @@ export function formSubmissionSubscribe(postService, initValidityState, isFormVa
                 showDangerAlertWithBasicReinit(initValidityState, $formHTMLEl);
                 
                 // Send the submit back failure event on Google Analytics
-                ga('send', 'event', gaEventCategory, 'submitBackFailure');
+                typeof ga === 'function' && ga('send', 'event', gaEventCategory, 'submitBackFailure');
             });
         }
     });
