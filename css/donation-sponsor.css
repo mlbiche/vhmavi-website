@@ -33,3 +33,7 @@
     color: rgb(255, 184, 28);
     font-style: italic;
 }
+
+.container.vhmavi-container .row h5.vhmavi-join-sponsor a {
+    text-decoration: underline;
+}

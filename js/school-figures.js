@@ -5,7 +5,7 @@
 
 const schoolFigures = {
     'foundationYear': 2010,
-    'nbStudents': 242,
+    'nbStudents': 260,
     'feesExemptedPercentage': 80,
     'nbBoarders': 42,
     'nbTeachers': 36,

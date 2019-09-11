@@ -1,4 +1,4 @@
-# VHMaVi Webstive V3
+# VHMaVi Website V3
 
 <http://vhmavi.edu.np/>
 

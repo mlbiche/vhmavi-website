@@ -75,8 +75,8 @@
     <div class="container vhmavi-container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
-                <h2>Le projet de nouvel internat</h2>
-                <p>Pour faire face à la demande croissante d'inscriptions et pour offrir de bonnes conditions à plus d'élèves issus de familles pauvres, l'école construit actuellement un nouveau dortoir de 70 places. Pour soutenir ce projet, <a href="donation-sponsor.php">faites un don</a> !</p>
+                <h2>Le nouvel internat</h2>
+                <p>Pour faire face à la demande croissante d'inscriptions et pour offrir de bonnes conditions à plus d'élèves issus de familles pauvres, l'école dispose d'un nouveau dortoir de 100 places depuis mai 2019.<br />Retrouvez une rétrospective de l'inauguration en présence des présidents des associations cofinanceuses <a href="http://childrenandfuture.com/" target="_blank">Children&Future</a> et <a href="http://www.gsefoundation.com/" target="_blank">GSE Foundation</a>, de l'Ambassadeur de France au Népal et du maire de Budhanilkantha sur <a href="https://www.facebook.com/pg/vhmav/photos/?tab=album&album_id=2148191445277735&__tn__=-UC-R" target="_blank">notre page Facebook</a> !</p>
             </div>
         </div>
     </div>

@@ -77,6 +77,8 @@
 
                 <h2 class="vhmavi-donation-sponsor-small-h2">Comment sont utilisés les fonds du parrainage ?</h2>
                 <p>L'intégralité des fonds des parrainages est mutualisée pour financer le fonctionnement de l'école (la cantine de l’école et l’internat, fournir des manuels, des uniformes, du matériel scolaire, etc...).</p>
+            
+                <h5 class="vhmavi-join-sponsor">Retrouvez une présentation détaillée du parrainage dans <a href="extern/sponsoring_brochure.pdf" target="_blank">notre nouvelle brochure</a>.</h5>
             </div>
         </div>
     </div>
