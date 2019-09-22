@@ -9,62 +9,62 @@
 
 <url>
   <loc>http://vhmavi.edu.np/</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://vhmavi.edu.np/index.php</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://vhmavi.edu.np/presentation.php</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://vhmavi.edu.np/mission.php</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://vhmavi.edu.np/students.php</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://vhmavi.edu.np/hostel.php</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://vhmavi.edu.np/news.php</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://vhmavi.edu.np/team.php</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://vhmavi.edu.np/sponsors.php</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://vhmavi.edu.np/donation-sponsor.php</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://vhmavi.edu.np/volunteer.php</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://vhmavi.edu.np/contact.php</loc>
-  <lastmod>2019-08-12T22:43:38+00:00</lastmod>
+  <lastmod>2019-09-22T01:27:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -155,6 +155,11 @@
 <url>
   <loc>http://vhmavi.edu.np/extern/newsletters/newsletter_fev_mars_2013.pdf</loc>
   <lastmod>2019-03-06T12:31:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://vhmavi.edu.np/extern/sponsoring_brochure.pdf</loc>
+  <lastmod>2019-09-11T04:39:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
