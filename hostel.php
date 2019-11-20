@@ -45,7 +45,7 @@
                 <h1>L'internat</h1>
                 <p>Afin d'accueillir des élèves venant de régions plus isolées ou issus de familles pauvres, notre école dispose depuis 2010 d'un internat de 40 places, à moins d'un kilomètre de l'école.</p>
                 <p>Cet internat leur permet non seulement d'évoluer dans un cadre studieux (les responsables d'internat et les bénévoles offrent aux internes un soutien scolaire quotidien qui favorise leur réussite scolaire) mais aussi de vivre dans de bonnes conditions sanitaires et d'être nourris avec les légumes du potager !</p>
-                <p>Quand certains sont issus de familles extrêmement pauvres, l'internat est une véritable aide, aussi bien pour les enfants que pour les parents.</p>
+                <p>Pour ceux issus de familles extrêmement pauvres, l'internat est une véritable aide, aussi bien pour les enfants que pour les parents.</p>
             </div>
         </div>
     </div>
@@ -60,7 +60,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
                 <h2>Les infrastructures</h2>
-                <p>Suite au séisme de 2015, l'ancien internat a été détruit et l'école a reconstruit un nouveau bâtiment pour reloger ses internes. Après un appel aux dons réussi, trois bâtiments ont vu le jour : le dortoir, les sanitaires et la cantine.</p>
+                <p>À la suite du séisme de 2015, l'ancien internat a été détruit et l'école a reconstruit un nouveau bâtiment pour reloger ses internes. Après un appel aux dons réussi, trois bâtiments ont vu le jour : le dortoir, les sanitaires et la cantine.</p>
                 <p>La cantine est le véritable lieu de vie des internes. Dans cette grande salle, ils mangent tous ensemble, font leurs devoirs ou passent tout simplement du temps à leurs activités préférées (danses, jeux, lecture, dessin, ...).</p>
             </div>
         </div>

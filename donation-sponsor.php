@@ -70,10 +70,10 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
                 <h2 class="vhmavi-donation-sponsor-small-h2">Comment trouver son/sa filleul/le ?</h2>
-                <p>Sur demande, vous pouvez recevoir les histoires, profils et bulletins scolaires des enfants en recherche de parrainage, et décider de parrainer un profil. En moyenne, une quarantaine d'élèves sont en recherche de parrainages.</p>
+                <p>Sur demande, vous pouvez recevoir les histoires, profils et bulletins scolaires des enfants en recherche de parrainage, et décider de parrainer un profil. En moyenne, une quarantaine d'élèves sont en recherche de parrainage.</p>
                 
                 <h2 class="vhmavi-donation-sponsor-small-h2">En quoi consiste le suivi de l'enfant ?</h2>
-                <p>Le parrainage finance tout ou partie de la scolarité et internat d'un élève, mais ce n'est pas tout ! Nos élèves apprécient énormément correspondre avec leurs parrains, recevoir des colis, voire rencontrer leurs parrains à l'occasion de voyages. Tous nos parrains peuvent aussi recevoir notre newsletter.</p>
+                <p>Le parrainage finance tout ou partie de la scolarité et du coût de la vie à l’internat d'un élève, mais ce n'est pas tout ! Nos élèves apprécient énormément correspondre avec leurs parrains, recevoir des colis, voire rencontrer leurs parrains à l'occasion de voyages. Tous nos parrains peuvent aussi recevoir notre newsletter.</p>
 
                 <h2 class="vhmavi-donation-sponsor-small-h2">Comment sont utilisés les fonds du parrainage ?</h2>
                 <p>L'intégralité des fonds des parrainages est mutualisée pour financer le fonctionnement de l'école (la cantine de l’école et l’internat, fournir des manuels, des uniformes, du matériel scolaire, etc...).</p>

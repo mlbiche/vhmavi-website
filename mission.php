@@ -37,7 +37,7 @@
             <div class="col-12 col-lg-9">
                 <h1>Notre mission</h1>
                 <p>Face aux lacunes du système éducatif népalais, VHMaVi propose une pédagogie innovante et ouverte à tous pour former les générations futures.</p>
-                <p>L'inclusion de matières alternatives recentrées sur l'humain, la réforme de la maternelle, le contact avec des bénévoles étrangers ou encore l'implication les enseignants sont autant de facteurs qui participent à l'éveil de cette jeunesse.</p>
+                <p>L'inclusion de matières alternatives centrées sur l'humain, la réforme de la maternelle, le contact avec des bénévoles étrangers ou encore l'implication les enseignants sont autant de facteurs qui participent à l'éveil de cette jeunesse.</p>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@
             <div class="col-12 col-lg-9">
                 <h2>Le développement de nouvelles compétences</h2>
                 <p>Toutes les matières traditionnelles sont enseignées, avec une approche centrée sur la compréhension plutôt que le par-cœur.</p>
-                <p>En plus, nous proposons aux élèves de développer :</p>
+                <p>De plus, nous proposons aux élèves de développer :</p>
             </div>
             <div class="col-12 col-md-6 col-lg-4 vhmavi-icons-text-col">
                 <div class="vhmavi-icon-container">
@@ -65,7 +65,7 @@
                 <div  class="vhmavi-icon-container">
                     <i class="vhmavi-icon-speech-bubble"></i>
                 </div>                     
-                <p>Leur esprit critique avec des prises de parole en publique, des travaux de groupe.</p>
+                <p>Leur esprit critique avec des cours de prise de parole en public, des travaux de groupe.</p>
             </div>
             <div class="col-12 vhmavi-icons-text-col vhmavi-icons-text-col-last">
                 <div class="vhmavi-icon-container">
@@ -105,7 +105,7 @@
             <div class="col-12 col-lg-9">
                 <h2>Une éducation de qualité pour tous</h2>
                 <p>Notre école mène aussi un combat pour l'égalité des chances. L'accès à l'éducation pour les enfants issus de familles pauvres, défavorisées est une chose qui nous tient à cœur.</p>
-                <p>Nous proposons à nos élèves en manque de moyens une exemption de frais. Celle-ci concerne plus de 80% d'entre eux et n'est réalisable que grâce à l'aide de nos parrains. Quant aux enfants issus de familles plus aisées, ils payent de faibles frais de scolarités calculés en fonction du salaire des parents.</p>
+                <p>Nous proposons à nos élèves en manque de moyens une exemption de frais. Celle-ci concerne plus de <span class="vhmavi-figure-fees-exempted-percentage"></span>% d'entre eux et n'est réalisable que grâce à l'aide de nos parrains. Quant aux enfants issus de familles plus aisées, ils payent de faibles frais de scolarité calculés en fonction du salaire des parents.</p>
             </div>
         </div>
     </div>
@@ -137,7 +137,7 @@
                 <h2>L'implication de nos enseignants</h2>
                 <p>Nous avons également fait le choix d'inclure nos enseignants dans le cycle évolutif de l'école. Ceux-ci sont responsabilisés et participent aux changements en apportant de nouvelles idées.</p>
                 <p>Depuis quelques années, nous arrivons à maintenir une équipe constante ce qui nous permet de travailler sur le long terme. Fréquemment, nos enseignants nous font remonter de nouvelles idées pour l'école ou notre système pédagogique. Ils sont également à l'initiative d'évènements à l'école, comme des tournois sportifs ou des journées dédiées à la créativité.</p>
-                <p>L'implication demandée à nos enseignants est très exigeante. Leurs leçons sont préparées sur l'année, et leurs programmes sont construits à partir de ressources variées.</p>
+                <p>Nous sommes très exigeants concernant l’implication de nos enseignants. Leurs leçons sont préparées sur l'année, et leurs programmes sont construits à partir de ressources variées.</p>
             </div>
         </div>
     </div>
@@ -148,5 +148,8 @@
 
     <!-- Bootstrap and JQuery script loader include -->
     <?php include("includes/script-loader.php"); ?>
+    
+    <!-- School data script loading -->
+    <script src="js/school-figures.js"></script>
 </body>
 </html>

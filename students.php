@@ -47,7 +47,7 @@
         <div class="row vhmavi-txt-img-shared-row">
             <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-left">
                 <h2 class="vhmavi-students-h2">Des enfants issus de familles dévaforisées</h2>
-                <p>À VHMaVi, pas question de laisser de côtés les plus démunis. Parmi nos élèves, nombreux sont ceux issus de familles parfois très pauvres et ce sont plus de <span class="vhmavi-figure-fees-exempted-percentage"></span>% d'entre eux qui se voient exemptés de frais. L'accès à tous à l'éducation est pour nous une cause primordiale, afin de donner aux enfants toutes les cartes possibles pour dessiner leur destin.</p>
+                <p>À VHMaVi, pas question de laisser de côtés les plus démunis. Parmi nos élèves, nombreux sont issus de familles parfois très pauvres et plus de <span class="vhmavi-figure-fees-exempted-percentage"></span>% d'entre eux qui se voient exemptés de frais. L'accès à tous à l'éducation est pour nous une cause primordiale, afin de donner aux enfants toutes les cartes possibles pour dessiner leur destin.</p>
             </div>
             <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-right">
                 <img src="img/students/student_smile.JPG" alt="Portrait d'enfant" id="vhmavi-img-student-smile" />

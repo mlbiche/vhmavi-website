@@ -56,7 +56,7 @@
         <div class="row vhmavi-txt-img-shared-row">
             <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-left">
                 <h2>Pourquoi venir en tant que bénévole ?</h2>
-                <p>Le bénévolat est sans aucun doute une expérience unique, humainement et émotionnellement. Se confronter à la diversité culturelle a le pouvoir de changer son propre regard sur le monde qui nous entoure.</p>
+                <p>Le bénévolat est sans nul doute une expérience unique, humainement et émotionnellement. Se confronter à la diversité culturelle a le pouvoir de changer notre regard sur le monde qui nous entoure.</p>
                 <p>À VHMaVi, nos bénévoles sont pleinement intégrés dans le projet pédagogique et dans la vie locale, accompagnés par Saru et Pramod. Votre impact est direct et réel.</p>
             </div>
             <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-right">
@@ -69,7 +69,7 @@
             </div>
             <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
                 <h2>La vie à VHMaVi en tant que bénévole</h2>
-                <p>En plus de vos actions à l'école, vous êtes plongé dans une véritable auberge espagnol, logé et nourri chez Pramod et Saru, qu'ils appellent la Maison du Bonheur.</p>
+                <p>En plus de vos actions à l'école, vous êtes plongé dans une véritable auberge espagnol, logé et nourri dans la maison de Pramod et Saru, qu'ils appellent la Maison du Bonheur.</p>
                 <h3>Votre journée type</h3>
                 <p>8h - Vous retrouvez les autres bénévoles autour d'une belle table de petit déjeuner.</p>
                 <p>9h - Début de la journée d'école, chacun se consacre à ses projets (voir plus bas).</p>
