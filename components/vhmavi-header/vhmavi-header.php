@@ -32,7 +32,9 @@
             <?php else: ?>
             <li class="nav-item">
             <?php endif ?>
-                <a class="nav-link" href="index.php">Accueil</a>
+                <a class="nav-link" href="index.php">
+                    <?php echo $lang['vhmavi-header-home']; ?>
+                </a>
             </li>
             <?php
             if ($_SERVER['REQUEST_URI'] == '/presentation.php'
@@ -46,7 +48,7 @@
             <li class="nav-item dropdown vhmavi-show">
             <?php endif ?>
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'école
+                    <?php echo $lang['vhmavi-header-school']; ?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <?php if ($_SERVER['REQUEST_URI'] == '/presentation.php'): ?>
@@ -54,7 +56,7 @@
                     <?php else: ?>
                     <a class="dropdown-item" href="presentation.php">
                     <?php endif ?>
-                        Présentation
+                        <?php echo $lang['vhmavi-header-schoolPresentation']; ?>
                     </a>
                     <div class="dropdown-divider"></div>
                     <?php if ($_SERVER['REQUEST_URI'] == '/mission.php'): ?>
@@ -62,7 +64,7 @@
                     <?php else: ?>
                     <a class="dropdown-item" href="mission.php">
                     <?php endif ?>
-                        Notre mission
+                        <?php echo $lang['vhmavi-header-schoolMission']; ?>
                     </a>
                     <div class="dropdown-divider"></div>
                     <?php if ($_SERVER['REQUEST_URI'] == '/students.php'): ?>
@@ -70,7 +72,7 @@
                     <?php else: ?>
                     <a class="dropdown-item" href="students.php">
                     <?php endif ?>
-                        Nos élèves
+                        <?php echo $lang['vhmavi-header-schoolStudents']; ?>
                     </a>
                     <div class="dropdown-divider"></div>
                     <?php if ($_SERVER['REQUEST_URI'] == '/hostel.php'): ?>
@@ -78,7 +80,7 @@
                     <?php else: ?>
                     <a class="dropdown-item" href="hostel.php">
                     <?php endif ?>
-                        L'internat
+                        <?php echo $lang['vhmavi-header-schoolBoardingSchool']; ?>
                     </a>
                     <div class="dropdown-divider"></div>
                     <?php if ($_SERVER['REQUEST_URI'] == '/news.php'): ?>
@@ -86,7 +88,7 @@
                     <?php else: ?>
                     <a class="dropdown-item" href="news.php">
                     <?php endif ?>
-                        Les dernières nouvelles
+                        <?php echo $lang['vhmavi-header-schoolNewsletter']; ?>
                     </a>
                 </div>
             </li>
@@ -99,7 +101,7 @@
             <li class="nav-item dropdown vhmavi-show">
             <?php endif ?>
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Qui sommes-nous ?
+                    <?php echo $lang['vhmavi-header-whoWeAre']; ?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <?php if ($_SERVER['REQUEST_URI'] == '/team.php'): ?>
@@ -107,7 +109,7 @@
                     <?php else: ?>
                     <a class="dropdown-item" href="team.php">
                     <?php endif ?>
-                        Notre équipe
+                        <?php echo $lang['vhmavi-header-whoWeAreTeam']; ?>
                     </a>
                     <div class="dropdown-divider"></div>
                     <?php if ($_SERVER['REQUEST_URI'] == '/sponsors.php'): ?>
@@ -115,7 +117,7 @@
                     <?php else: ?>
                     <a class="dropdown-item" href="sponsors.php">
                     <?php endif ?>
-                        Nos partenaires
+                        <?php echo $lang['vhmavi-header-whoWeArePartners']; ?>
                     </a>
                 </div>
             </li>
@@ -129,7 +131,7 @@
             <li class="nav-item dropdown vhmavi-show">
             <?php endif ?>
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Nous soutenir
+                    <?php echo $lang['vhmavi-header-support']; ?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <?php if ($_SERVER['REQUEST_URI'] == '/donation-sponsor.php'): ?>
@@ -137,7 +139,7 @@
                     <?php else: ?>
                     <a class="dropdown-item" href="donation-sponsor.php">
                     <?php endif ?>
-                        Don et parrainage
+                        <?php echo $lang['vhmavi-header-supportDonationsSponsoring']; ?>
                     </a>
                     <div class="dropdown-divider"></div>
                     <!-- TODO : Uncomment when become-sponsor.php is ready -->
@@ -154,7 +156,7 @@
                     <?php else: ?>
                     <a class="dropdown-item" href="volunteer.php">
                     <?php endif ?>
-                        Devenir bénévole
+                        <?php echo $lang['vhmavi-header-supportBecomeVolunteer']; ?>
                     </a>
                 </div>
             </li>
@@ -163,7 +165,9 @@
             <?php else: ?>
             <li class="nav-item">
             <?php endif ?>
-                <a class="nav-link" href="contact.php">Nous contacter</a>
+                <a class="nav-link" href="contact.php">
+                    <?php echo $lang['vhmavi-header-contact']; ?>
+                </a>
             </li>
         </ul>
     </div>

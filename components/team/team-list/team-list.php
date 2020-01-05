@@ -5,86 +5,86 @@
 
 <div class="row justify-content-center">
     <div class="col-12 col-lg-9">
-        <h1>L'équipe pédagogique</h1>
-        <p>Constituée de <span class="vhmavi-figure-nb-teachers"></span> personnes, l'équipe pédagogique rassemble les enseignants, les responsables d'internat et le personnel administratif et technique.</p>
+        <h1><?php echo $lang['team-listHeader']; ?></h1>
+        <p><?php echo $lang['team-listParagraph']; ?></p>
     </div>
 </div>
 <div class="row justify-content-center">
     <div class="col-12 col-lg-9 vhmavi-team-members-accordion-col">
         <div class="card vhmavi-accordion hide">
             <div class="card-header">
-                <h2 class="card-title">Le corps enseignant</h2>
-                <p class="card-subtitle">Formés par d'anciens enseignants français bénévoles, nos enseignants participent à l'aspect innovant de l'école. Parmis eux, nous comptons également certains de nos anciens élèves qui viennent nous prêter main forte après leurs cours du matin à l'université.</p>
-                <p class="card-help-text">Cliquez pour ouvrir la liste d'enseignants</p>
+                <h2 class="card-title"><?php echo $lang['team-listTeachingTeamTitle']; ?></h2>
+                <p class="card-subtitle"><?php echo $lang['team-listTeachingTeamSubtitle']; ?></p>
+                <p class="card-help-text"><?php echo $lang['team-listTeachingTeamHelpText']; ?></p>
             </div>
             <div class="vhmavi-accordion-body">
                 <!-- The teacher list -->
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <p>Shekhar Shrestha - <span class="vhmavi-team-role">Professeur de sciences et informatique, principal-adjoint</span></p>
+                        <p>Shekhar Shrestha - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher1']; ?></span></p>
                     </li>
                     <li class="list-group-item">
-                        <p>Yadap Bhattarai - <span class="vhmavi-team-role">Professeur de népalais - Cycle 3</span></p>
+                        <p>Yadap Bhattarai - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher2']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Susma Humagain - <span class="vhmavi-team-role">Professeur de sciences sociales - Cycle 3</span></p>
+                        <p>Susma Humagain - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher3']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Nabina Thapa-Magar - <span class="vhmavi-team-role">Professeur d’anglais - Cycle 3</span></p>
+                        <p>Nabina Thapa-Magar - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher4']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Sakuntala Phadera - <span class="vhmavi-team-role">Professeur de mathématiques - Cycle 3</span></p>
+                        <p>Sakuntala Phadera - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher5']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Bibas Pathak - <span class="vhmavi-team-role">Professeur de science - Cycle 10</span></p>
+                        <p>Bibas Pathak - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher6']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Rajesh Paradhan - <span class="vhmavi-team-role">Professeur de mathématiques - Cycle 10</span></p>
+                        <p>Rajesh Paradhan - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher7']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Nitu Nakarmi - <span class="vhmavi-team-role">Professeur de mathématiques - Cycle 2</span></p>
+                        <p>Nitu Nakarmi - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher8']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Subodh Pandey - <span class="vhmavi-team-role">Professeur en informatique - Cycle 2</span></p>
+                        <p>Subodh Pandey - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher9']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Romi Thapa - <span class="vhmavi-team-role">Professeur en anglais - Cycle 2</span></p>
+                        <p>Romi Thapa - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher10']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Angel Puri - <span class="vhmavi-team-role">Professeur en sciences sociales et DTW (Discover The World) - Cycle 2</span></p>
+                        <p>Angel Puri - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher11']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Sujata Bhattarai - <span class="vhmavi-team-role">Professeur de népalais - Cycle 2</span></p>
+                        <p>Sujata Bhattarai - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher12']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Arati Lohani - <span class="vhmavi-team-role">Enseignante - Cycle 1</span></p>
+                        <p>Arati Lohani - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher13']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Ramita Lama - <span class="vhmavi-team-role">Coordinatrice maternelle et enseignante - UKG</span></p>
+                        <p>Ramita Lama - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher14']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Kabita Bhadtal - <span class="vhmavi-team-role">Enseignante - LKG</span></p>
+                        <p>Kabita Bhadtal - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher15']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Indramaya Tamang - <span class="vhmavi-team-role">Enseignante - Petite section de maternelle</span></p>
+                        <p>Indramaya Tamang - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher16']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Supriya Pandey - <span class="vhmavi-team-role"> Responsable du "play group"</span></p>
+                        <p>Supriya Pandey - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher17']; ?>"</span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Janga Tamang - <span class="vhmavi-team-role">Professeur de sport et d’expression corporelle</span></p>
+                        <p>Janga Tamang - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher18']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Nima Lama - <span class="vhmavi-team-role">Professeur d’arts plastiques</span></p>
+                        <p>Nima Lama - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher19']; ?></span></p>
                     </li>    
                     <li class="list-group-item">
-                        <p>Sameer Tamang - <span class="vhmavi-team-role">Professeur d’arts plastiques</span></p>
+                        <p>Sameer Tamang - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher20']; ?></span></p>
                     </li>
                     <li class="list-group-item">
-                        <p>Bishal Uprety - <span class="vhmavi-team-role">Professeur de comptabilité et environnement</span></p>
+                        <p>Bishal Uprety - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher21']; ?></span></p>
                     </li>
                     <li class="list-group-item">
-                        <p>Sirish Paudel - <span class="vhmavi-team-role">Professeur d'environnement - Cycle 10</span></p>
+                        <p>Sirish Paudel - <span class="vhmavi-team-role"><?php echo $lang['team-listTeachingTeamTeacher22']; ?></span></p>
                     </li>
                     <li class="list-group-item">
                         <p>Laxmi Uprety</p>
@@ -108,8 +108,8 @@
     <div class="col-12 col-lg-9 vhmavi-team-members-accordion-col">
         <div class="card vhmavi-accordion hide">
             <div class="card-header">
-                <h2 class="card-title">L'équipe d'internat</h2>
-                <p class="card-help-text">Cliquez pour ouvrir la liste des membres de l'équipe d'internat</p>
+                <h2 class="card-title"><?php echo $lang['team-listBoardingTeamTitle']; ?></h2>
+                <p class="card-help-text"><?php echo $lang['team-listBoardingTeamHelpText']; ?></p>
             </div>
             <div class="vhmavi-accordion-body">
                 <!-- The hostel team list -->
@@ -133,26 +133,26 @@
     <div class="col-12 col-lg-9 vhmavi-team-members-accordion-col">
         <div class="card vhmavi-accordion hide">
             <div class="card-header">
-                <h2 class="card-title">Les autres membres</h2>
-                <p class="card-help-text">Cliquez pour ouvrir la liste des membres de l'éqipe adminitrative et technique</p>
+                <h2 class="card-title"><?php echo $lang['team-listOtherMembersTitle']; ?></h2>
+                <p class="card-help-text"><?php echo $lang['team-listOtherMembersHelpText']; ?></p>
             </div>
             <div class="vhmavi-accordion-body">
                 <!-- The other member list -->
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <p>Jamuna Shakya - <span class="vhmavi-team-role">Comptable</span></p>
+                        <p>Jamuna Shakya - <span class="vhmavi-team-role"><?php echo $lang['team-listOtherMembersMember1']; ?></span></p>
                     </li>
                     <li class="list-group-item">
-                        <p>Rekha Tamang  - <span class="vhmavi-team-role">Cuisinière</span></p>
+                        <p>Rekha Tamang  - <span class="vhmavi-team-role"><?php echo $lang['team-listOtherMembersMember2']; ?></span></p>
                     </li>
                     <li class="list-group-item">
-                        <p>Sunita Rasailee - <span class="vhmavi-team-role">Assistante maternelle</span></p>
+                        <p>Sunita Rasailee - <span class="vhmavi-team-role"><?php echo $lang['team-listOtherMembersMember3']; ?></span></p>
                     </li>
                     <li class="list-group-item">
-                        <p>Kalpana Nagarkoti - <span class="vhmavi-team-role">Assistante</span></p>
+                        <p>Kalpana Nagarkoti - <span class="vhmavi-team-role"><?php echo $lang['team-listOtherMembersMember4']; ?></span></p>
                     </li>
                     <li class="list-group-item">
-                        <p>Ram Chandra Adhikari - <span class="vhmavi-team-role">Jardinier</span></p>
+                        <p>Ram Chandra Adhikari - <span class="vhmavi-team-role"><?php echo $lang['team-listOtherMembersMember5']; ?></span></p>
                     </li>
                 </ul>
             </div>

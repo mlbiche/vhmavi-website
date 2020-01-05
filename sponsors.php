@@ -1,5 +1,14 @@
+<?php
+    // Load the accepted language
+    include("includes/lang-loader.php");
+
+    $selectedLang = parseAskedLang();
+
+    include(getLangFile($selectedLang));
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang=<?php echo $selectedLang ?>>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144927724-1"></script>
@@ -11,10 +20,10 @@
         gtag('config', 'UA-144927724-1');
     </script>
     
-    <title>Nos partenaires - Victor Hugo Manjushree Vidyapith - VHMaVi</title>
-
+    <title><?php echo $lang['sponsors-title']; ?></title>
+    
     <!-- Meta description for SEO -->
-    <meta name="description" content="Victor Hugo Manjushree Vidyapith, aussi appelée VHMaVi, est une école népalaise qui fournit une éducation gratuite de qualité." />
+    <meta name="description" content="<?php echo $lang['sponsors-metaDescription']; ?>" />
 
     <!-- Canonical link to reference the master copy of the URL to SEO -->
     <link rel="canonical" href="http://vhmavi.edu.np/sponsors.php" /> 
@@ -32,7 +41,7 @@
     <div class="container vhmavi-container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
-                <h1>Nos partenaires</h1>
+                <h1><?php echo $lang['sponsors-paragraph1Header']; ?></h1>
             </div>
             <div class="col-9 col-md-4 col-lg-3 vhmavi-sponsor-col">
                 <a href="https://nayasapana.jimdo.com/" target="_blank" rel="noopener noreferer">
@@ -41,7 +50,7 @@
             </div>
             <div class="col-9 col-md-4 col-lg-3 vhmavi-sponsor-col">
                 <a href="http://www.ecoliersdumonde.org/" target="_blank" rel="noopener noreferer">
-                    <img src="img/sponsors/ecoliers_du_monde.jpg" class="vhmavi-sponsor-img" alt="Ecoliers du monde" />
+                    <img src="img/sponsors/ecoliers_du_monde.jpg" class="vhmavi-sponsor-img" alt="Écoliers du monde" />
                 </a>
             </div>
             <div class="col-9 col-md-4 col-lg-3 vhmavi-sponsor-col">
@@ -105,7 +114,7 @@
                 </a>
             </div>
             <div class="col-12 col-lg-9 vhmavi-other-sponsors-col">
-                <p>Et aussi :</p>
+                <p><?php echo $lang['sponsors-andAlso']; ?></p>
                 <p>Association Ouvre Les Mains <em>(Salon-en-Provence)</em></p>
             </div>
         </div>

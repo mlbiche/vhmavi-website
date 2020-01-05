@@ -5,115 +5,115 @@
 
 <div class="card vhmavi-accordion hide">
     <div class="card-header">
-        <h2 class=card-title>Consultez nos newsletters passées</h2>
-        <p class="card-help-text">Cliquez pour ouvrir la liste des newsletters passées</p>
+        <h2 class=card-title><?php echo $lang['news-newsListHeader']; ?></h2>
+        <p class="card-help-text"><?php echo $lang['news-newsListHeaderHelpText']; ?></p>
     </div>
     <div class="vhmavi-accordion-body">
         <!-- The newsletters list -->
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
                 <a href="http://sh1.sendinblue.com/na0mxn5vsc.html?t=1577612414" target="_blank">
-                    Août - Décembre 2019
+                    <?php echo $lang['news-newsListNewsletter21']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="http://sh1.sendinblue.com/n9r5ln5vsc.html?t=1568101347" target="_blank">
-                    Avril - Août 2019
+                    <?php echo $lang['news-newsListNewsletter20']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="http://sh1.sendinblue.com/1zv09n5vsc.html?t=1556895139" target="_blank">
-                    Janvier - Mars 2019
+                    <?php echo $lang['news-newsListNewsletter19']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_sept_dec_2018.pdf" target="_blank">
-                    Septembre - Décembre 2018
+                    <?php echo $lang['news-newsListNewsletter18']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_avril_aout_2018.pdf" target="_blank">
-                    Avril - Août 2018
+                    <?php echo $lang['news-newsListNewsletter17']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_janv_avril_2018.pdf" target="_blank">
-                    Janvier - Avril 2018
+                    <?php echo $lang['news-newsListNewsletter16']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_sept_dec_2017.pdf" target="_blank">
-                    Septembre - Décembre 2017
+                    <?php echo $lang['news-newsListNewsletter15']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_avril_aout_2017.pdf" target="_blank">
-                    Avril - Août 2017
+                    <?php echo $lang['news-newsListNewsletter14']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_janv_mars_2017.pdf" target="_blank">
-                    Janvier - Mars 2017
+                    <?php echo $lang['news-newsListNewsletter13']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_oct_dec_2016.pdf" target="_blank">
-                    Octobre - Décembre 2016
+                    <?php echo $lang['news-newsListNewsletter12']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_nov_janv_2015.pdf" target="_blank">
-                    Novembre 2015 - Janvier 2016
+                    <?php echo $lang['news-newsListNewsletter11']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_sept_oct_2015.pdf" target="_blank">
-                    Septembre - Octobre 2015
+                    <?php echo $lang['news-newsListNewsletter10']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_post_seisme_2015.pdf" target="_blank">
-                    Mars 2015 <em>(post-séisme)</em>
+                    <?php echo $lang['news-newsListNewsletter9']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_dec_janv_2014.pdf" target="_blank">
-                    Décembre 2014 - Janvier 2015
+                    <?php echo $lang['news-newsListNewsletter8']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_nov_dec_2014.pdf" target="_blank">
-                    Novembre - Décembre 2014
+                    <?php echo $lang['news-newsListNewsletter7']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_mars_avril_2014.pdf" target="_blank">
-                    Mars - Avril 2014
+                    <?php echo $lang['news-newsListNewsletter6']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_janv_2014.pdf" target="_blank">
-                    Janvier 2014
+                    <?php echo $lang['news-newsListNewsletter5']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_sept_nov_2013.pdf" target="_blank">
-                    Septembre - Novembre 2013
+                    <?php echo $lang['news-newsListNewsletter4']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_juil_aout_2013.pdf" target="_blank">
-                    Juillet - Août 2013
+                    <?php echo $lang['news-newsListNewsletter3']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_avril_juin_2013.pdf" target="_blank">
-                    Avril - Juin 2013
+                    <?php echo $lang['news-newsListNewsletter2']; ?>
                 </a>
             </li>
             <li class="list-group-item">
                 <a href="extern/newsletters/newsletter_fev_mars_2013.pdf" target="_blank">
-                    Février - Mars 2013
+                    <?php echo $lang['news-newsListNewsletter1']; ?>
                 </a>
             </li>
         </ul>

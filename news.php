@@ -1,5 +1,14 @@
+<?php
+    // Load the accepted language
+    include("includes/lang-loader.php");
+
+    $selectedLang = parseAskedLang();
+
+    include(getLangFile($selectedLang));
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang=<?php echo $selectedLang ?>>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144927724-1"></script>
@@ -11,10 +20,10 @@
         gtag('config', 'UA-144927724-1');
     </script>
     
-    <title>Les dernières nouvelles - Victor Hugo Manjushree Vidyapith - VHMaVi</title>
+    <title><?php echo $lang['news-title']; ?></title>
 
     <!-- Meta description for SEO -->
-    <meta name="description" content="Victor Hugo Manjushree Vidyapith, aussi appelée VHMaVi, est une école népalaise qui fournit une éducation gratuite de qualité." />
+    <meta name="description" content="<?php echo $lang['news-metaDescription']; ?>" />
 
     <!-- Canonical link to reference the master copy of the URL to SEO -->
     <link rel="canonical" href="http://vhmavi.edu.np/news.php" /> 
@@ -42,8 +51,8 @@
     <div class="container vhmavi-container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
-                <h1>Les newsletters de l'école</h1>
-                <p>Pour recevoir tous les quatre mois des nouvelles des élèves de l'école, leurs projets pédagogiques, et les évolution de VHMaVi, abonnez-vous à notre newsletter !</p>
+                <h1><?php echo $lang['news-paragraph1Header']; ?></h1>
+                <p><?php echo $lang['news-paragraph1Text1']; ?></p>
             </div>
         </div>
         <div class="row justify-content-center">

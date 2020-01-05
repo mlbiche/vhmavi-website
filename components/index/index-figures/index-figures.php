@@ -12,12 +12,12 @@
 <div class="container vhmavi-container vhmavi-figures-container">
     <div class="row">
         <div class="col-12 vhmavi-centered-col">
-            <p class="vhmavi-figures-headline">VHMaVi en quelques chiffres...</p>
+            <p class="vhmavi-figures-headline"><?php echo $lang['index-figures-header']; ?></p>
         </div>
         <!-- Figures are centered in there column -->
         <div class="col-12 col-sm-6 col-md-4 vhmavi-centered-col">
             <p class="vhmavi-figure vhmavi-figure-foundation-year"></p>
-            <p class="vhmavi-figure-description">Année de fondation</p>
+            <p class="vhmavi-figure-description"><?php echo $lang['index-figures-foundationYear']; ?></p>
         </div>
         <!--
             This figure is the middle one when there are three figures per line so it has
@@ -27,26 +27,26 @@
         -->
         <div class="col-12 col-sm-6 col-md-4 vhmavi-centered-col vhmavi-figures-3-col-middle vhmavi-figures-2-col-right">
             <p class="vhmavi-figure vhmavi-figure-nb-students"></p>
-            <p class="vhmavi-figure-description">Élèves</p>
-            <p class="vhmavi-figure-description">De la nursery à la classe 10</p>
+            <p class="vhmavi-figure-description"><?php echo $lang['index-figures-numberStudents']; ?></p>
+            <p class="vhmavi-figure-description"><?php echo $lang['index-figures-numberStudentsClassRange']; ?></p>
         </div>
         <div class="col-12 col-sm-6 col-md-4 vhmavi-centered-col">
             <p class="vhmavi-figure">
                 <span class="vhmavi-figure-fees-exempted-percentage"></span>%
             </p>
-            <p class="vhmavi-figure-description">D'exemptés de frais</p>
+            <p class="vhmavi-figure-description"><?php echo $lang['index-figures-feeExemptedPercentage']; ?></p>
         </div>
         <div class="col-12 col-sm-6 col-md-4 vhmavi-centered-col vhmavi-figures-2-col-right">
             <p class="vhmavi-figure vhmavi-figure-nb-boarders"></p>
-            <p class="vhmavi-figure-description">Internes</p>
+            <p class="vhmavi-figure-description"><?php echo $lang['index-figures-numberBoarders']; ?></p>
         </div>
         <div class="col-12 col-sm-6 col-md-4 vhmavi-centered-col vhmavi-figures-3-col-middle">
             <p class="vhmavi-figure vhmavi-figure-nb-teachers"></p>
-            <p class="vhmavi-figure-description">Intervenants</p>
+            <p class="vhmavi-figure-description"><?php echo $lang['index-figures-numberTeachers']; ?></p>
         </div>
         <div class="col-12 col-sm-6 col-md-4 vhmavi-centered-col vhmavi-figures-2-col-right">
             <p class="vhmavi-figure vhmavi-figure-nb-sponsors"></p>
-            <p class="vhmavi-figure-description">Parrains et marraines</p>
+            <p class="vhmavi-figure-description"><?php echo $lang['index-figures-numberSponsors']; ?></p>
         </div>
     </div>
 </div>

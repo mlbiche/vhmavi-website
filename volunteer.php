@@ -1,5 +1,14 @@
+<?php
+    // Load the accepted language
+    include("includes/lang-loader.php");
+
+    $selectedLang = parseAskedLang();
+
+    include(getLangFile($selectedLang));
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang=<?php echo $selectedLang ?>>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144927724-1"></script>
@@ -11,10 +20,10 @@
         gtag('config', 'UA-144927724-1');
     </script>
     
-    <title>Devenir bénévole - Victor Hugo Manjushree Vidyapith - VHMaVi</title>
+    <title><?php echo $lang['volunteer-title']; ?></title>
     
     <!-- Meta description for SEO -->
-    <meta name="description" content="Faites du bénévolat à Victor Hugo Manjushree Vidyapith, aussi appelée VHMaVi, une école népalaise qui fournit une éducation gratuite de qualité." />
+    <meta name="description" content="<?php echo $lang['volunteer-metaDescription']; ?>" />
 
     <!-- Canonical link to reference the master copy of the URL to SEO -->
     <link rel="canonical" href="http://vhmavi.edu.np/volunteer.php" /> 
@@ -47,93 +56,93 @@
     <div class="container vhmavi-container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
-                <h1>Devenir bénévole</h1>
-                <p>Depuis de nombreuses années, notre école accueille des bénévoles et des stagiaires du monde entier et de tous âges.</p>
+                <h1><?php echo $lang['volunteer-paragraph1Header']; ?></h1>
+                <p><?php echo $lang['volunteer-paragraph1Text1']; ?></p>
             </div>
         </div>
     </div>
     <div class="container vhmavi-container vhmavi-text-img-shared-container">
         <div class="row vhmavi-txt-img-shared-row">
             <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-left">
-                <h2>Pourquoi venir en tant que bénévole ?</h2>
-                <p>Le bénévolat est sans nul doute une expérience unique, humainement et émotionnellement. Se confronter à la diversité culturelle a le pouvoir de changer notre regard sur le monde qui nous entoure.</p>
-                <p>À VHMaVi, nos bénévoles sont pleinement intégrés dans le projet pédagogique et dans la vie locale, accompagnés par Saru et Pramod. Votre impact est direct et réel.</p>
+                <h2><?php echo $lang['volunteer-paragraph2Header']; ?></h2>
+                <p><?php echo $lang['volunteer-paragraph2Text1']; ?></p>
+                <p><?php echo $lang['volunteer-paragraph2Text2']; ?></p>
             </div>
             <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-right">
-                <img src="img/volunteer/volunteer_team.jpg" alt="Une équipe de volontaire" id="vhmavi-img-volunteer-team" />
+                <img src="img/volunteer/volunteer_team.jpg" alt="<?php echo $lang['volunteer-imgAlt1']; ?>" id="vhmavi-img-volunteer-team" />
             </div>
         </div>
         <div class="row vhmavi-txt-img-shared-row">
             <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
-                <img src="img/volunteer/volunteer_friend.jpg" alt="Deux volontaires" id="vhmavi-img-volunteer-friend" />
+                <img src="img/volunteer/volunteer_friend.jpg" alt="<?php echo $lang['volunteer-imgAlt2']; ?>" id="vhmavi-img-volunteer-friend" />
             </div>
             <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
-                <h2>La vie à VHMaVi en tant que bénévole</h2>
-                <p>En plus de vos actions à l'école, vous êtes plongé dans une véritable auberge espagnol, logé et nourri dans la maison de Pramod et Saru, qu'ils appellent la Maison du Bonheur.</p>
-                <h3>Votre journée type</h3>
-                <p>8h - Vous retrouvez les autres bénévoles autour d'une belle table de petit déjeuner.</p>
-                <p>9h - Début de la journée d'école, chacun se consacre à ses projets (voir plus bas).</p>
-                <p>15h40 - Fin de la journée d'école. Votre après-midi est libre. Peut-être préférez-vous passer du temps à l'internat avec les élèves ? Ou encore vous balader dans la nature environnante avec les autres bénévoles ?</p>
-                <p>19h - Dîner tous ensemble.</p>
-                <p>Comme pour les élèves, le Samedi est le seul jour de pause. Vous pourrez profiter de ce jour pour visiter la vallée de Katmandou et ses grands sites, comme Bhaktapur, Bodhanath, Kirtipur, etc...</p>
-                <p><em>Prix de la pension complète : 250€/mois</em></p>
+                <h2><?php echo $lang['volunteer-paragraph3Header']; ?></h2>
+                <p><?php echo $lang['volunteer-paragraph3Text1']; ?></p>
+                <h3><?php echo $lang['volunteer-paragraph3SubHeader']; ?></h3>
+                <p><?php echo $lang['volunteer-paragraph3Text2']; ?></p>
+                <p><?php echo $lang['volunteer-paragraph3Text3']; ?></p>
+                <p><?php echo $lang['volunteer-paragraph3Text4']; ?></p>
+                <p><?php echo $lang['volunteer-paragraph3Text5']; ?></p>
+                <p><?php echo $lang['volunteer-paragraph3Text6']; ?></p>
+                <p><em><?php echo $lang['volunteer-paragraph3Text7']; ?></em></p>
             </div>
         </div>
         <div class="row vhmavi-txt-img-shared-row">
             <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-left">
-                <h2>L'aide au quotidien</h2>
-                <p>En tant que bénévole, vous pouvez être impliqué dans des actions ponctuelles, au jour le jour. Dans l'emploi du temps de nos élèves, plusieurs créneaux sont propices à votre intervention :</p>
+                <h2><?php echo $lang['volunteer-paragraph4Header']; ?></h2>
+                <p><?php echo $lang['volunteer-paragraph4Text1']; ?></p>
                 <div class="vhmavi-icon-text-row">
                     <i class="vhmavi-icon-class"></i>
-                    <p>Vous pouvez être amené à surveiller les élèves au cours de leur temps libre <em>(free class)</em>, de leur temps de travail en autonomie <em>(without teacher)</em> ou même lors des sessions d'examen.</p>
+                    <p><?php echo $lang['volunteer-paragraph4Text2']; ?></p>
                 </div>                
                 <div class="vhmavi-icon-text-row">
                     <i class="vhmavi-icon-homework"></i>
-                    <p>Vous pouvez également aider les élèves aux cours de classes de soutien <em>(extra class)</em> ou encore le soir à l'internat, pendant le temps de travail de nos internes.</p>
+                    <p><?php echo $lang['volunteer-paragraph4Text3']; ?></p>
                 </div>
             </div>
             <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-right">
-                <img src="img/volunteer/volunteer_smile.jpg" alt="Un volontaire pendant la pause" />
+                <img src="img/volunteer/volunteer_smile.jpg" alt="<?php echo $lang['volunteer-imgAlt3']; ?>" />
             </div>
         </div>
         <div class="row vhmavi-txt-img-shared-row">
             <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
-                <img src="img/volunteer/volunteer_explain2.jpg" alt="Une volontaire au cours d'un atelier" />
+                <img src="img/volunteer/volunteer_explain2.jpg" alt="<?php echo $lang['volunteer-imgAlt4']; ?>" />
             </div>
             <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
-                <h2>Mettre en place un projet précis</h2>
-                <p>Si vous disposez d'un savoir-faire spécifique, il peut être intéressant de mettre en place un projet en lien avec ces compétences.</p>
-                <p>Les élèves disposent de plusieurs créneaux de <em>school project</em> au cours desquels les volontaires peuvent intervenir.</p>
-                <p>Du cours de français à la préparation d'un jardin en permaculture en passant par l'organisation de l'Exposcience, toutes les disciplines peuvent être mises à l'œuvre. N'hésitez donc pas à nous proposer vos idées.</p>
+                <h2><?php echo $lang['volunteer-paragraph5Header']; ?></h2>
+                <p><?php echo $lang['volunteer-paragraph5Text1']; ?></p>
+                <p><?php echo $lang['volunteer-paragraph5Text2']; ?></p>
+                <p><?php echo $lang['volunteer-paragraph5Text3']; ?></p>
             </div>
         </div>
         <div class="row vhmavi-txt-img-shared-row">
             <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-left">
-                <h2>L'amélioration des infrastructures</h2>
-                <p>Ponctuellement, l'école a besoin d'aide pour intervenir sur ses infrastructures.</p>
-                <p>Il peut s'agir d'un inventaire du matériel scolaire, de la réalisation ou la mise à jour de fiches de parrainages, des travaux de peinture ou d'aménagement ou encore des travaux de communication en intervenant sur nos newsletters ou notre site Internet.</p>
+                <h2><?php echo $lang['volunteer-paragraph6Header']; ?></h2>
+                <p><?php echo $lang['volunteer-paragraph6Text1']; ?></p>
+                <p><?php echo $lang['volunteer-paragraph6Text2']; ?></p>
             </div>
             <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-right">
-                <img src="img/volunteer/volunteers_students.jpg" alt="Des volontaires avec des élèves" id="vhmavi-img-volunteers-students" />
+                <img src="img/volunteer/volunteers_students.jpg" alt="<?php echo $lang['volunteer-imgAlt5']; ?>" id="vhmavi-img-volunteers-students" />
             </div>
         </div>
         <div class="row vhmavi-txt-img-shared-row">
             <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
-                <img src="img/volunteer/volunteer_explain.jpg" alt="Un volontaire au cours d'un atelier" />
+                <img src="img/volunteer/volunteer_explain.jpg" alt="<?php echo $lang['volunteer-imgAlt6']; ?>" />
             </div>
             <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
-                <p class="vhmavi-volunteer-quote">"J'ai toujours voulu faire une mission solidaire à l'étranger. Avec mon action à l'école VHMaVi, j'ai pu réaliser ce souhait tout en le liant à mes études. Au cours de ces 2 mois, j'ai partagé de beaux moments avec les élèves à travers des cours de danse et d'histoire de l'art.</p>
-                <p class="vhmavi-volunteer-quote">Mon expérience ici a été enrichissante et touchante. Au-delà de mon contact avec les élèves, en vivant ici plusieurs semaines, j'ai redécouvert le plaisir de prendre mon temps et d'apprécier les choses simples du quotidien. Sans hésiter, je reviendrai au Népal pour revivre cette expérience humaine et culturelle !"</p>
-                <p class="vhmavi-volunteer-quote-author">Marie, volontaire 2019</p>
+                <p class="vhmavi-volunteer-quote"><?php echo $lang['volunteer-quotationParagraph1']; ?></p>
+                <p class="vhmavi-volunteer-quote"><?php echo $lang['volunteer-quotationParagraph2']; ?></p>
+                <p class="vhmavi-volunteer-quote-author"><?php echo $lang['volunteer-quotationAuthor']; ?></p>
             </div>
         </div>
     </div>
     <div class="container vhmavi-container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
-                <h2>Alors pourquoi pas vous ?!</h2>
-                <p>S'il vous reste certaines questions concernant le bénévolat à l'école Victor Hugo Manjushree Vidyapith, n'hésitez pas à nous faire part de votre question sur notre <a href="contact.php">formulaire de contact</a>.</p>
-                <p>Vous avez envie de vivre une expérience unique et êtes convaincu que vous pouvez apporter votre aide au sein de l'école ? Alors n'hésitez pas, envoyez-nous votre candidature avec le formulaire ci-dessous.</p>
+                <h2><?php echo $lang['volunteer-paragraph7Header']; ?></h2>
+                <p><?php echo $lang['volunteer-paragraph7Text1']; ?></p>
+                <p><?php echo $lang['volunteer-paragraph7Text2']; ?></p>
             </div>
         </div>
         <div class="row justify-content-center">

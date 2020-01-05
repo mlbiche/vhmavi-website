@@ -1,5 +1,14 @@
+<?php
+    // Load the accepted language
+    include("includes/lang-loader.php");
+
+    $selectedLang = parseAskedLang();
+
+    include(getLangFile($selectedLang));
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang=<?php echo $selectedLang ?>>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144927724-1"></script>
@@ -11,10 +20,10 @@
         gtag('config', 'UA-144927724-1');
     </script>
 
-    <title>Accueil - Victor Hugo Manjushree Vidyapith - VHMaVi</title>
+    <title><?php echo $lang['index-title']; ?></title>
 
     <!-- Meta description for SEO -->
-    <meta name="description" content="Victor Hugo Manjushree Vidyapith, aussi appelée VHMaVi, est une école népalaise qui fournit une éducation gratuite de qualité." />
+    <meta name="description" content="<?php echo $lang['index-metaDescription']; ?>" />
 
     <!-- Canonical link to reference the master copy of the URL to SEO -->
     <link rel="canonical" href="http://vhmavi.edu.np/" /> 

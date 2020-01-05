@@ -1,5 +1,14 @@
+<?php
+    // Load the accepted language
+    include("includes/lang-loader.php");
+
+    $selectedLang = parseAskedLang();
+
+    include(getLangFile($selectedLang));
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang=<?php echo $selectedLang ?>>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144927724-1"></script>
@@ -11,10 +20,10 @@
         gtag('config', 'UA-144927724-1');
     </script>
     
-    <title>Notre équipe - Victor Hugo Manjushree Vidyapith - VHMaVi</title>
-
+    <title><?php echo $lang['team-title']; ?></title>
+    
     <!-- Meta description for SEO -->
-    <meta name="description" content="Victor Hugo Manjushree Vidyapith, aussi appelée VHMaVi, est une école népalaise qui fournit une éducation gratuite de qualité." />
+    <meta name="description" content="<?php echo $lang['team-metaDescription']; ?>" />
 
     <!-- Canonical link to reference the master copy of the URL to SEO -->
     <link rel="canonical" href="http://vhmavi.edu.np/team.php" /> 
@@ -51,7 +60,7 @@
     <div class="container vhmavi-container vhmavi-full-width-img-container">
         <div class="row">
             <div class="col vhmavi-img-col">
-                <img src="img/team/team.jpg" alt="Des enseignants" id="vhmavi-img-team" />
+                <img src="img/team/team.jpg" alt="<?php echo $lang['team-imgAlt1']; ?>Des enseignants" id="vhmavi-img-team" />
             </div>
         </div>
     </div>

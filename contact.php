@@ -1,5 +1,14 @@
+<?php
+    // Load the accepted language
+    include("includes/lang-loader.php");
+
+    $selectedLang = parseAskedLang();
+
+    include(getLangFile($selectedLang));
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang=<?php echo $selectedLang ?>>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144927724-1"></script>
@@ -11,10 +20,10 @@
         gtag('config', 'UA-144927724-1');
     </script>
     
-    <title>Nous contacter - Victor Hugo Manjushree Vidyapith - VHMaVi</title>
-
+    <title><?php echo $lang['contact-title']; ?></title>
+    
     <!-- Meta description for SEO -->
-    <meta name="description" content="Victor Hugo Manjushree Vidyapith, aussi appelée VHMaVi, est une école népalaise qui fournit une éducation gratuite de qualité." />
+    <meta name="description" content="<?php echo $lang['contact-metaDescription']; ?>" />
 
     <!-- Canonical link to reference the master copy of the URL to SEO -->
     <link rel="canonical" href="http://vhmavi.edu.np/contact.php" /> 
@@ -41,9 +50,9 @@
     <div class="container vhmavi-container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
-                <h1>Contactez-nous !</h1>
-                <p>Vous avez une question sur l'école ? Vous voulez prendre de nos nouvelles ? Vous souhaitez nous rendre visite ?</p>
-                <p>Quelque soit le motif, contactez-nous, nous nous ferons un plaisir de vous répondre !</p>
+                <h1><?php echo $lang['contact-paragraph1Header']; ?></h1>
+                <p><?php echo $lang['contact-paragraph1Text1']; ?></p>
+                <p><?php echo $lang['contact-paragraph1Text2']; ?></p>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -55,11 +64,11 @@
                 <form class="vhmavi-form" novalidate>
                     <!-- Display an alert for email sent success -->
                     <div class="alert alert-success vhmavi-form-alert-success" role="alert">
-                        Votre mail a été envoyé ! Nous vous répondrons dans les plus brefs délais.
+                        <?php echo $lang['contact-contactFormAlertSuccess']; ?>
                     </div>
                     <!-- Display an alert for email sent failure -->
                     <div class="alert alert-danger vhmavi-form-alert-danger" role="alert">
-                        L'envoi de votre mail a échoué... Veuillez réessayer plus tard.
+                        <?php echo $lang['contact-contactFormAlertDanger']; ?>
                     </div>
 
                     <!-- Form group for first name -->
@@ -68,61 +77,64 @@
                             The text written above the text box is the label
                             It needs to refer to the input thanks to the for field corresponding to the input id
                         -->
-                        <label for="contact-form-first-name">Prénom <span class="vhmavi-required-field">*</span></label>
+                        <label for="contact-form-first-name"><?php echo $lang['contact-contactFormFirstNameLabel']; ?> <span class="vhmavi-required-field">*</span></label>
                         <!--
                             This field is required
                             The placeholder is the displayed text within the empty input
                             The name is used to identify parameters in the POST HTTP request when the form is submitted
                             This is this name that is used to access each submitted value
                         -->
-                        <input type="text" class="form-control" name="firstName" id="contact-form-first-name" placeholder="Prénom" required>
+                        <input type="text" class="form-control" name="firstName" id="contact-form-first-name" placeholder="<?php echo $lang['contact-contactFormFirstNamePlaceholder']; ?>" required>
                         <!-- The invalid feedback text is displayed when the form is submitted and is not validated -->
                         <div class="invalid-feedback">
-                            Laissez-nous vous connaître un peu en donnant votre prénom.
+                            <?php echo $lang['contact-contactFormFirstNameFeedback']; ?>
                         </div>
                     </div>
                     <!-- Form group for last name -->
                     <div class="form-group">
-                        <label for="contact-form-last-name">Nom <span class="vhmavi-required-field">*</span></label>
-                        <input type="text" class="form-control" name="lastName" id="contact-form-last-name" placeholder="Nom" required>
+                        <label for="contact-form-last-name"><?php echo $lang['contact-contactFormLastNameLabel']; ?> <span class="vhmavi-required-field">*</span></label>
+                        <input type="text" class="form-control" name="lastName" id="contact-form-last-name" placeholder="<?php echo $lang['contact-contactFormLastNamePlaceholder']; ?>" required>
                         <div class="invalid-feedback">
-                            Laissez-nous vous connaître un peu en donnant votre nom.
+                            <?php echo $lang['contact-contactFormLastNameFeedback']; ?>
                         </div>
                     </div>
                     <!-- Form group for email address -->
                     <div class="form-group">
-                        <label for="contact-form-email">Adresse mail <span class="vhmavi-required-field">*</span></label>
-                        <input type="email" class="form-control" name="email" id="contact-form-email" placeholder="Adresse mail" required>
+                        <label for="contact-form-email"><?php echo $lang['contact-contactFormEmailLabel']; ?> <span class="vhmavi-required-field">*</span></label>
+                        <input type="email" class="form-control" name="email" id="contact-form-email" placeholder="<?php echo $lang['contact-contactFormEmailPlaceholder']; ?>" required>
                         <div class="invalid-feedback">
-                            Merci d'entrer une adresse valide.
+                            <?php echo $lang['contact-contactFormEmailFeedback']; ?>
                         </div>
                     </div>
                     <!-- Form group for subject suggestion -->
                     <div class="form-group">
-                        <label for="contact-form-suggested-subject">Objet suggéré <span class="vhmavi-required-field">*</span></label>
+                        <label for="contact-form-suggested-subject"><?php echo $lang['contact-contactFormSuggestedSubjectLabel']; ?> <span class="vhmavi-required-field">*</span></label>
                         <select class="form-control" name="subject-suggested" id="contact-form-suggested-subject" required>
-                            <option value="children-to-sponsor-subject">Je souhaite connaître les enfants en attente de parrainage</option>
-                            <option value="form-issue-subject">Je rencontre un problème avec un formulaire du site</option>
-                            <option value="sponsor-package-subject">Je souhaite envoyer un colis à un mon/ma filleul/le</option>
-                            <option value="sponsor-cancellation-subject">Je souhaite résilier mon parrainage</option>
-                            <option value="sponsor-change-subject">Je souhaite changer de formule de parrainage</option>
-                            <option value="gear-donation-subject">Je souhaite faire un don matériel à l'école</option>
-                            <option value="volunteer-subject">J'ai une question concernant le bénévolat</option>
-                            <option value="other-subject">Autre</option>
+                            <option value="children-to-sponsor-subject"><?php echo $lang['contact-contactFormSuggestedSubjectOption1']; ?></option>
+                            <option value="form-issue-subject"><?php echo $lang['contact-contactFormSuggestedSubjectOption2']; ?></option>
+                            <option value="sponsor-package-subject"><?php echo $lang['contact-contactFormSuggestedSubjectOption3']; ?></option>
+                            <option value="sponsor-cancellation-subject"><?php echo $lang['contact-contactFormSuggestedSubjectOption4']; ?></option>
+                            <option value="sponsor-change-subject"><?php echo $lang['contact-contactFormSuggestedSubjectOption5']; ?></option>
+                            <option value="gear-donation-subject"><?php echo $lang['contact-contactFormSuggestedSubjectOption6']; ?></option>
+                            <option value="volunteer-subject"><?php echo $lang['contact-contactFormSuggestedSubjectOption7']; ?></option>
+                            <option value="other-subject"><?php echo $lang['contact-contactFormSuggestedSubjectOption8']; ?></option>
                         </select>
                     </div>
                     <!-- Form group for subject -->
                     <div class="form-group" id="contact-form-group-subject">
-                        <label for="contact-form-subject">Objet <span class="vhmavi-required-field">*</span></label>
-                        <input class="form-control" name="subject" id="contact-form-subject" placeholder="Objet du message" value="Je souhaite connaître les enfants en attente de parrainage" required>
+                        <label for="contact-form-subject"><?php echo $lang['contact-contactFormObjectLabel']; ?> <span class="vhmavi-required-field">*</span></label>
+                        <input class="form-control" name="subject" id="contact-form-subject" placeholder="<?php echo $lang['contact-contactFormSubjectPlaceholder']; ?>" value="Je souhaite connaître les enfants en attente de parrainage" required>
                         <div class="invalid-feedback">
-                            Aidez-nous à traiter plus rapidement votre message en ajoutant un objet clair et précis.
+                            <?php echo $lang['contact-contactFormSubjectFeedback']; ?>
                         </div>
                     </div>
                     <!-- Form group for the message content -->
                     <div class="form-group">
-                        <label for="contact-form-message">Message <span class="vhmavi-required-field">*</span></label>
-                        <textarea class="form-control" name="message" id="contact-form-message" placeholder="Entrez le contenu de votre message..." rows="6" required></textarea>
+                        <label for="contact-form-message"><?php echo $lang['contact-contactFormMessageLabel']; ?> <span class="vhmavi-required-field">*</span></label>
+                        <textarea class="form-control" name="message" id="contact-form-message" placeholder="<?php echo $lang['contact-contactFormMessagePlaceholder']; ?>" rows="6" required></textarea>
+                        <div class="invalid-feedback">
+                            <?php echo $lang['contact-contactFormMessageFeedback']; ?>
+                        </div>
                     </div>
                     <!--
                         Form group to receive a copy of this mail or not
@@ -132,24 +144,24 @@
                         <div class="form-check">
                             <input class="form-check-input" name="sendCopy" type="checkbox" value="" id="contact-form-send-copy">
                             <label class="form-check-label" for="contact-form-send-copy">
-                                M'envoyer une copie de mon message par mail
+                                <?php echo $lang['contact-contactFormSendCopyLabel']; ?>
                             </label>
                         </div>
                     </div>
                     <div class="form-group">
                         <small class="form-text vhmavi-required-field">
-                            * Champs requis
+                            * <?php echo $lang['contact-contactFormRequiredFields']; ?>
                         </small>
                     </div>
                     <!-- The reCAPTACHA V2 -->
                     <div id="vhmavi-recaptcha-container"></div>
                     <!-- The click on the send button is catched in the JS corresponding file -->
                     <button class="btn btn-outline-vhmavi vhmavi-submit-btn" type="submit" disabled>
-                        Envoyer
+                        <?php echo $lang['contact-contactFormSend']; ?>
                     </button>
                     <button class="btn btn-outline-vhmavi vhmavi-submitting-spinner-btn" type="submit" disabled> 
                         <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                        Envoi en cours...
+                        <?php echo $lang['contact-contactFormSending']; ?>
                     </button>
                 </form>
             </div>

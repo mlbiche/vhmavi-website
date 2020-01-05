@@ -17,8 +17,8 @@
         </div>
         <!-- Contact column -->
         <div class="col col-sm">
-            <p class="vhmavi-contact-title">Nous contacter</p>
-            <p><a href="contact.php">Formulaire de contact</a></p>
+            <p class="vhmavi-contact-title"><?php echo $lang['vhmavi-footer-contactUs']; ?></p>
+            <p><a href="contact.php"><?php echo $lang['vhmavi-footer-contactUsForm']; ?></a></p>
             <p>+977 01 437 94 69</p>
         </div>
         <!-- Facebook logo and link column -->

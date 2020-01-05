@@ -1,5 +1,14 @@
+<?php
+    // Load the accepted language
+    include("includes/lang-loader.php");
+
+    $selectedLang = parseAskedLang();
+
+    include(getLangFile($selectedLang));
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang=<?php echo $selectedLang ?>>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144927724-1"></script>
@@ -11,10 +20,10 @@
         gtag('config', 'UA-144927724-1');
     </script>
     
-    <title>Parrainer un enfant - Victor Hugo Manjushree Vidyapith - VHMaVi</title>
+    <title><?php echo $lang['donationSponsor-title']; ?></title>
     
     <!-- Meta description for SEO -->
-    <meta name="description" content="Parrainez un enfant de Victor Hugo Manjushree Vidyapith, aussi appelée VHMaVi, une école népalaise qui fournit une éducation gratuite de qualité." />
+    <meta name="description" content="<?php echo $lang['donationSponsor-metaDescription']; ?>" />
 
     <!-- Canonical link to reference the master copy of the URL to SEO -->
     <link rel="canonical" href="http://vhmavi.edu.np/donation-sponsor.php" /> 
@@ -50,11 +59,11 @@
     <div class="container vhmavi-container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
-                <h1>Le parrainage</h1>
-                <p>Parrainer un élève de VHMaVi c'est non seulement financer ses études, mais c'est aussi lui apporter une motivation pour sa réussite scolaire et un sentiment d'accompagnement sur le long terme. C'est un soutien inestimable pour nos élèves !</p>
+                <h1><?php echo $lang['donationSponsor-paragraph1Header']; ?></h1>
+                <p><?php echo $lang['donationSponsor-paragraph1Text1']; ?></p>
             </div>
             <div class="col-12 col-lg-7">
-                <h5 class="vhmavi-join-sponsor">Réduisez vos impôts en aidant un élève népalais !</h5>
+                <h5 class="vhmavi-join-sponsor"><?php echo $lang['donationSponsor-joinSponsorText1']; ?></h5>
             </div>
         </div>
     </div>
@@ -69,35 +78,35 @@
     <div class="container vhmavi-container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
-                <h2 class="vhmavi-donation-sponsor-small-h2">Comment trouver son/sa filleul/le ?</h2>
-                <p>Sur demande, vous pouvez recevoir les histoires, profils et bulletins scolaires des enfants en recherche de parrainage, et décider de parrainer un profil. En moyenne, une quarantaine d'élèves sont en recherche de parrainage.</p>
+                <h2 class="vhmavi-donation-sponsor-small-h2"><?php echo $lang['donationSponsor-paragraph2Header']; ?></h2>
+                <p><?php echo $lang['donationSponsor-paragraph2Text1']; ?></p>
                 
-                <h2 class="vhmavi-donation-sponsor-small-h2">En quoi consiste le suivi de l'enfant ?</h2>
-                <p>Le parrainage finance tout ou partie de la scolarité et du coût de la vie à l’internat d'un élève, mais ce n'est pas tout ! Nos élèves apprécient énormément correspondre avec leurs parrains, recevoir des colis, voire rencontrer leurs parrains à l'occasion de voyages. Tous nos parrains peuvent aussi recevoir notre newsletter.</p>
+                <h2 class="vhmavi-donation-sponsor-small-h2"><?php echo $lang['donationSponsor-paragraph3Header']; ?></h2>
+                <p><?php echo $lang['donationSponsor-paragraph3Text1']; ?></p>
 
-                <h2 class="vhmavi-donation-sponsor-small-h2">Comment sont utilisés les fonds du parrainage ?</h2>
-                <p>L'intégralité des fonds des parrainages est mutualisée pour financer le fonctionnement de l'école (la cantine de l’école et l’internat, fournir des manuels, des uniformes, du matériel scolaire, etc...).</p>
+                <h2 class="vhmavi-donation-sponsor-small-h2"><?php echo $lang['donationSponsor-paragraph4Header']; ?></h2>
+                <p><?php echo $lang['donationSponsor-paragraph4Text1']; ?></p>
             
-                <h5 class="vhmavi-join-sponsor">Retrouvez une présentation détaillée du parrainage dans <a href="extern/sponsoring_brochure.pdf" target="_blank">notre nouvelle brochure</a>.</h5>
+                <h5 class="vhmavi-join-sponsor"><?php echo $lang['donationSponsor-joinSponsorText2']; ?></h5>
             </div>
         </div>
     </div>
     <div class="container vhmavi-container vhmavi-full-width-img-container">
         <div class="row">
             <div class="col vhmavi-img-col">
-                <img src="img/donation-sponsor/student_smile.JPG" alt="Portrait d'enfants" id="vhmavi-img-student-smile" />
+                <img src="img/donation-sponsor/student_smile.JPG" alt="<?php echo $lang['donationSponsor-imgAlt1']; ?>" id="vhmavi-img-student-smile" />
             </div>
         </div>
     </div>
     <div class="container vhmavi-container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
-                <h2>L'association ASVHMAVI Nepal</h2>
-                <p>Les dons et parrainages (dons mensuels) s'effectuent auprès d'une association française, ASVHMAVI Nepal, basée à Lyon. Ainsi, après déduction d'impôts, votre don ne vous coûte réellement que 34% de son montant.</p>
-                <p>Les parrainages sont sans engagement et peuvent être résiliés à tout moment sur demande.</p>
+                <h2><?php echo $lang['donationSponsor-paragraph5Header']; ?></h2>
+                <p><?php echo $lang['donationSponsor-paragraph5Text1']; ?></p>
+                <p><?php echo $lang['donationSponsor-paragraph5Text2']; ?></p>
             </div>
             <div class="col-12 col-lg-7">
-                <h5 class="vhmavi-join-sponsor">Déjà <span class="vhmavi-figure-nb-sponsors"></span> parrains et marraines permettent à des enfants népalais de bénéficier d'une éducation exceptionnelle, et vous ?</h5>
+                <h5 class="vhmavi-join-sponsor"><?php echo $lang['donationSponsor-joinSponsorText3']; ?></h5>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -108,9 +117,9 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
-                <h2>Le don matériel</h2>
-                <p>Le don matériel n'est pas le soutien que nous privilégions, pour des raisons de déperdition des colis et d'empreinte carbone du transport. Par ailleurs, le don financier nous permet de soutenir l'économie népalaise en nous fournissant localement.</p>
-                <p>Si toutefois vous souhaitez nous faire un don matériel, merci de nous contacter via <a href="contact.php">notre formulaire de contact</a> avant l'envoi pour prendre connaissance de nos besoins matériels du moment (vêtements, matériel éducatif, etc...).</p>
+                <h2><?php echo $lang['donationSponsor-paragraph6Header']; ?></h2>
+                <p><?php echo $lang['donationSponsor-paragraph6Text1']; ?></p>
+                <p><?php echo $lang['donationSponsor-paragraph6Text2']; ?></p>
             </div>
         </div>
     </div>
