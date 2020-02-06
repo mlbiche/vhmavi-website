@@ -9,8 +9,8 @@
         <p><?php echo $lang['team-listParagraph']; ?></p>
     </div>
 </div>
-<div class="row justify-content-center">
-    <div class="col-12 col-lg-9 vhmavi-team-members-accordion-col">
+<div class="row row-cols-12 row-cols-lg-0 justify-content-center">
+    <div class="col vhmavi-team-members-accordion-col">
         <div class="card vhmavi-accordion hide">
             <div class="card-header">
                 <h2 class="card-title"><?php echo $lang['team-listTeachingTeamTitle']; ?></h2>
@@ -105,7 +105,7 @@
             </div>
         </div>
     </div>
-    <div class="col-12 col-lg-9 vhmavi-team-members-accordion-col">
+    <div class="col vhmavi-team-members-accordion-col">
         <div class="card vhmavi-accordion hide">
             <div class="card-header">
                 <h2 class="card-title"><?php echo $lang['team-listBoardingTeamTitle']; ?></h2>
@@ -130,7 +130,7 @@
             </div>
         </div>
     </div>
-    <div class="col-12 col-lg-9 vhmavi-team-members-accordion-col">
+    <div class="col vhmavi-team-members-accordion-col">
         <div class="card vhmavi-accordion hide">
             <div class="card-header">
                 <h2 class="card-title"><?php echo $lang['team-listOtherMembersTitle']; ?></h2>

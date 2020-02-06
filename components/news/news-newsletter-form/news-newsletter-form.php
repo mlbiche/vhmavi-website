@@ -15,24 +15,24 @@
 
     <!-- Form group for first name -->
     <div class="form-group">
-        <label for="volunter-form-first-name"><?php echo $lang['news-newsFormFirstNameLabel']; ?> <span class="vhmavi-required-field">*</span></label>
-        <input type="text" class="form-control" name="firstName" id="volunter-form-first-name" placeholder="<?php echo $lang['news-newsFormFirstNamePlaceholder']; ?>" required>
+        <label for="news-form-first-name"><?php echo $lang['news-newsFormFirstNameLabel']; ?> <span class="vhmavi-required-field">*</span></label>
+        <input type="text" class="form-control" name="firstName" id="news-form-first-name" placeholder="<?php echo $lang['news-newsFormFirstNamePlaceholder']; ?>" required>
         <div class="invalid-feedback">
             <?php echo $lang['news-newsFormFirstNameFeedback']; ?>
         </div>
     </div>
     <!-- Form group for last name -->
     <div class="form-group">
-        <label for="volunteer-form-last-name"><?php echo $lang['news-newsFormLastNameLabel']; ?> <span class="vhmavi-required-field">*</span></label>
-        <input type="text" class="form-control" name="lastName" id="volunteer-form-last-name" placeholder="<?php echo $lang['news-newsFormLastNamePlaceholder']; ?>" required>
+        <label for="news-form-last-name"><?php echo $lang['news-newsFormLastNameLabel']; ?> <span class="vhmavi-required-field">*</span></label>
+        <input type="text" class="form-control" name="lastName" id="news-form-last-name" placeholder="<?php echo $lang['news-newsFormLastNamePlaceholder']; ?>" required>
         <div class="invalid-feedback">
             <?php echo $lang['news-newsFormLastNameFeedback']; ?>
         </div>
     </div>
     <!-- Form group for email address -->
     <div class="form-group">
-        <label for="volunteer-form-email"><?php echo $lang['news-newsFormEmailLabel']; ?> <span class="vhmavi-required-field">*</span></label>
-        <input type="email" class="form-control" name="email" id="volunteer-form-email" placeholder="<?php echo $lang['news-newsFormEmailPlaceholder']; ?>" required>
+        <label for="news-form-email"><?php echo $lang['news-newsFormEmailLabel']; ?> <span class="vhmavi-required-field">*</span></label>
+        <input type="email" class="form-control" name="email" id="news-form-email" placeholder="<?php echo $lang['news-newsFormEmailPlaceholder']; ?>" required>
         <div class="invalid-feedback">
             <?php echo $lang['news-newsFormEmailFeedback']; ?>
         </div>

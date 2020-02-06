@@ -53,12 +53,12 @@
         </div>
     </div>
     <div class="container vhmavi-container vhmavi-text-img-shared-container">
-        <div class="row vhmavi-txt-img-shared-row">
-            <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-left">
+        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+            <div class="col vhmavi-text-col vhmavi-text-col-left">
                 <h2 class="vhmavi-students-h2"><?php echo $lang['students-paragraph2Header']; ?></h2>
                 <p><?php echo $lang['students-paragraph2Text1']; ?></p>
             </div>
-            <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-right">
+            <div class="col vhmavi-img-col vhmavi-img-col-right">
                 <img src="img/students/student_smile.JPG" alt="<?php echo $lang['students-imgAlt1']; ?>" id="vhmavi-img-student-smile" />
             </div>
         </div>

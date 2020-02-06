@@ -43,22 +43,22 @@
 
     <!-- Contexte -->
     <div class="container vhmavi-container vhmavi-text-img-shared-container">
-        <div class="row vhmavi-txt-img-shared-row">
-            <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-left">
+        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+            <div class="col vhmavi-text-col vhmavi-text-col-left">
                 <h1 class="vhmavi-presentation-h1"><?php echo $lang['presentation-paragraph1Header']; ?></h1>
                 <p><?php echo $lang['presentation-paragraph1Text1']; ?></p>
                 <p><?php echo $lang['presentation-paragraph1Text2']; ?></p>
                 <p><?php echo $lang['presentation-paragraph1Text3']; ?></p>
             </div>
-            <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-right">
+            <div class="col vhmavi-img-col vhmavi-img-col-right">
                 <img src="img/presentation/nepal_field.jpg" alt="<?php echo $lang['presentation-imgAlt1']; ?>" id="vhmavi-img-nepal-field" />
             </div>
         </div>
-        <div class="row vhmavi-txt-img-shared-row">
-            <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
+        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+            <div class="col vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
                 <img src="img/presentation/little_student.jpg" alt="<?php echo $lang['presentation-imgAlt2']; ?>" id="vhmavi-img-little-student" />
             </div>
-            <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
+            <div class="col vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
                 <h2 class="vhmavi-presentation-h2"><?php echo $lang['presentation-paragraph2Header']; ?></h2>
                 <p><?php echo $lang['presentation-paragraph2Text1']; ?></p>
                 <p><?php echo $lang['presentation-paragraph2Text2']; ?></p>
@@ -66,8 +66,8 @@
                 <p><?php echo $lang['presentation-paragraph2Text4']; ?></p>
             </div>
         </div>
-        <div class="row vhmavi-txt-img-shared-row">
-            <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-left">
+        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+            <div class="col vhmavi-text-col vhmavi-text-col-left">
                 <h2 class="vhmavi-presentation-h2"><em><?php echo $lang['presentation-paragraph3Header']; ?></em></h2>
                 <p><?php echo $lang['presentation-paragraph3Text1']; ?></p>
                 <p><?php echo $lang['presentation-paragraph3Text2']; ?></p>
@@ -76,15 +76,15 @@
                 <p><span class="vhmavi-school-name">Vidyapith</span><?php echo $lang['presentation-paragraph3Text5']; ?></p>
                 <p><?php echo $lang['presentation-paragraph3Text6']; ?></p>
             </div>
-            <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-right">
+            <div class="col vhmavi-img-col vhmavi-img-col-right">
                 <img src="img/presentation/old_school.jpg" alt="<?php echo $lang['presentation-imgAlt3']; ?>" />
             </div>
         </div>
-        <div class="row vhmavi-txt-img-shared-row">
-            <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
+        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+            <div class="col vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
                 <img src="img/presentation/preschool_building.JPG" alt="<?php echo $lang['presentation-imgAlt4']; ?>" id="vhmavi-img-preschool-building" />
             </div>
-            <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
+            <div class="col vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
                 <h2 class="vhmavi-presentation-h2"><?php echo $lang['presentation-paragraph4Header']; ?></h2>
                 <p><?php echo $lang['presentation-paragraph4Text1']; ?></p>
                 <p><?php echo $lang['presentation-paragraph4Text2']; ?></p>

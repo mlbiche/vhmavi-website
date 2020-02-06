@@ -14,8 +14,8 @@
 
     <!-- Form group for first name -->
     <div class="form-group">
-        <label for="volunter-form-first-name"><?php echo $lang['volunteer-volunteerFormFirstNameLabel']; ?> <span class="vhmavi-required-field">*</span></label>
-        <input type="text" class="form-control" name="firstName" id="volunter-form-first-name" placeholder="<?php echo $lang['volunteer-volunteerFormFirstNamePlaceholder']; ?>" required>
+        <label for="volunteer-form-first-name"><?php echo $lang['volunteer-volunteerFormFirstNameLabel']; ?> <span class="vhmavi-required-field">*</span></label>
+        <input type="text" class="form-control" name="firstName" id="volunteer-form-first-name" placeholder="<?php echo $lang['volunteer-volunteerFormFirstNamePlaceholder']; ?>" required>
         <div class="invalid-feedback">
             <?php echo $lang['volunteer-volunteerFormFirstNameFeedback']; ?>
         </div>

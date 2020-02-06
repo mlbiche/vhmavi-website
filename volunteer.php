@@ -62,21 +62,21 @@
         </div>
     </div>
     <div class="container vhmavi-container vhmavi-text-img-shared-container">
-        <div class="row vhmavi-txt-img-shared-row">
-            <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-left">
+        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+            <div class="col vhmavi-text-col vhmavi-text-col-left">
                 <h2><?php echo $lang['volunteer-paragraph2Header']; ?></h2>
                 <p><?php echo $lang['volunteer-paragraph2Text1']; ?></p>
                 <p><?php echo $lang['volunteer-paragraph2Text2']; ?></p>
             </div>
-            <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-right">
+            <div class="col vhmavi-img-col vhmavi-img-col-right">
                 <img src="img/volunteer/volunteer_team.jpg" alt="<?php echo $lang['volunteer-imgAlt1']; ?>" id="vhmavi-img-volunteer-team" />
             </div>
         </div>
-        <div class="row vhmavi-txt-img-shared-row">
-            <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
+        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+            <div class="col vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
                 <img src="img/volunteer/volunteer_friend.jpg" alt="<?php echo $lang['volunteer-imgAlt2']; ?>" id="vhmavi-img-volunteer-friend" />
             </div>
-            <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
+            <div class="col vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
                 <h2><?php echo $lang['volunteer-paragraph3Header']; ?></h2>
                 <p><?php echo $lang['volunteer-paragraph3Text1']; ?></p>
                 <h3><?php echo $lang['volunteer-paragraph3SubHeader']; ?></h3>
@@ -88,8 +88,8 @@
                 <p><em><?php echo $lang['volunteer-paragraph3Text7']; ?></em></p>
             </div>
         </div>
-        <div class="row vhmavi-txt-img-shared-row">
-            <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-left">
+        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+            <div class="col vhmavi-text-col vhmavi-text-col-left">
                 <h2><?php echo $lang['volunteer-paragraph4Header']; ?></h2>
                 <p><?php echo $lang['volunteer-paragraph4Text1']; ?></p>
                 <div class="vhmavi-icon-text-row">
@@ -101,36 +101,36 @@
                     <p><?php echo $lang['volunteer-paragraph4Text3']; ?></p>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-right">
+            <div class="col vhmavi-img-col vhmavi-img-col-right">
                 <img src="img/volunteer/volunteer_smile.jpg" alt="<?php echo $lang['volunteer-imgAlt3']; ?>" />
             </div>
         </div>
-        <div class="row vhmavi-txt-img-shared-row">
-            <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
+        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+            <div class="col vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
                 <img src="img/volunteer/volunteer_explain2.jpg" alt="<?php echo $lang['volunteer-imgAlt4']; ?>" />
             </div>
-            <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
+            <div class="col vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
                 <h2><?php echo $lang['volunteer-paragraph5Header']; ?></h2>
                 <p><?php echo $lang['volunteer-paragraph5Text1']; ?></p>
                 <p><?php echo $lang['volunteer-paragraph5Text2']; ?></p>
                 <p><?php echo $lang['volunteer-paragraph5Text3']; ?></p>
             </div>
         </div>
-        <div class="row vhmavi-txt-img-shared-row">
-            <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-left">
+        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+            <div class="col vhmavi-text-col vhmavi-text-col-left">
                 <h2><?php echo $lang['volunteer-paragraph6Header']; ?></h2>
                 <p><?php echo $lang['volunteer-paragraph6Text1']; ?></p>
                 <p><?php echo $lang['volunteer-paragraph6Text2']; ?></p>
             </div>
-            <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-right">
+            <div class="col vhmavi-img-col vhmavi-img-col-right">
                 <img src="img/volunteer/volunteers_students.jpg" alt="<?php echo $lang['volunteer-imgAlt5']; ?>" id="vhmavi-img-volunteers-students" />
             </div>
         </div>
-        <div class="row vhmavi-txt-img-shared-row">
-            <div class="col-12 col-lg-6 vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
+        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+            <div class="col vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
                 <img src="img/volunteer/volunteer_explain.jpg" alt="<?php echo $lang['volunteer-imgAlt6']; ?>" />
             </div>
-            <div class="col-12 col-lg-6 vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
+            <div class="col vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
                 <p class="vhmavi-volunteer-quote"><?php echo $lang['volunteer-quotationParagraph1']; ?></p>
                 <p class="vhmavi-volunteer-quote"><?php echo $lang['volunteer-quotationParagraph2']; ?></p>
                 <p class="vhmavi-volunteer-quote-author"><?php echo $lang['volunteer-quotationAuthor']; ?></p>

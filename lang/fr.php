@@ -149,9 +149,9 @@
     $lang['news-newsFormLastNameLabel'] = 'Nom';
     $lang['news-newsFormLastNamePlaceholder'] = 'Nom';
     $lang['news-newsFormLastNameFeedback'] = 'Laissez-nous vous connaître un peu en donnant votre nom.';
-    $lang['news-newsFormLastNameLabel'] = 'Adresse mail';
-    $lang['news-newsFormLastNamePlaceholder'] = 'Adresse mail';
-    $lang['news-newsFormLastNameFeedback'] = 'Merci d\'entrer une adresse valide.';
+    $lang['news-newsFormEmailLabel'] = 'Adresse mail';
+    $lang['news-newsFormEmailPlaceholder'] = 'Adresse mail';
+    $lang['news-newsFormEmailFeedback'] = 'Merci d\'entrer une adresse valide.';
     $lang['news-newsFormRequiredFields'] = 'Champs requis';
     $lang['news-newsFormSubscribe'] = 'S\'abonner';
     $lang['news-newsFormSubscribing'] = 'Abonnement en cours...';
