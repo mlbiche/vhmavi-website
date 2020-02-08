@@ -39,7 +39,7 @@ This folder contains all the components used by one or several pages. This archi
 * *vhmavi-full-width-img* : a container for image that occupies the full width of the screen. It is used in different web pages.
 * *vhmavi-header* : the web page header component, containing the school name and logo and the menu. It is included in each page.
 * *vhmavi-phone-input* : a custom phone input component that provides a basic validation function for phone numbers. It is used in the *donation-sponsor-form* component.
-* *vhmavi-postal-code-input* : a custom postal code input component that provides a basic validation function for postal codes. It is used in the *donation-sponsor-form* component.
+* *vhmavi-post-code-input* : a custom post code input component that provides a basic validation function for post codes. It is used in the *donation-sponsor-form* component.
 * *vhmavi-txt-img-shared-row* : a container for rows shared between text and image. The image occupies all the free space, without any margin. It is used in different web pages.
 * *volunteer* : component specific to the page *volunteer.php*. It is its form.
 

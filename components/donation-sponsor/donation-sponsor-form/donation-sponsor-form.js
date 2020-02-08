@@ -1,5 +1,5 @@
 import { phoneInputValidator } from '../../vhmavi-phone-input/vhmavi-phone-input.js';
-import { postalCodeInputValidator } from '../../vhmavi-postal-code-input/vhmavi-postal-code-input.js';
+import { postCodeInputValidator } from '../../vhmavi-post-code-input/vhmavi-post-code-input.js';
 import {
     initValidityState,
     inputsValidationSubscribe,
@@ -12,9 +12,9 @@ import {
 validators['donation-sponsor-form-phone'] = phoneInputValidator;
 validatorsParameters['donation-sponsor-form-phone'] = [];
 
-// Add the postal code input validator to the form
-validators['donation-sponsor-form-postal-code'] = postalCodeInputValidator;
-validatorsParameters['donation-sponsor-form-postal-code'] = [];
+// Add the post code input validator to the form
+validators['donation-sponsor-form-post-code'] = postCodeInputValidator;
+validatorsParameters['donation-sponsor-form-post-code'] = [];
 
 // Initialise the validity state array once the document is ready
 initValidityState();

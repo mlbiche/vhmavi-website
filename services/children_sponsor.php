@@ -19,7 +19,7 @@
 
     /**
      * Check that all the form input that are required are provided, that the email input is an email,
-     * that the phone input is a phone number, that the postal code input is a postal code
+     * that the phone input is a phone number, that the post code input is a post code
      */
     if (((!empty($_POST['firstName']) && !empty($_POST['lastName']))
                 xor (!empty($_POST['associationName']) && !empty($_POST['associationFirstName'])
@@ -29,8 +29,8 @@
             // Check the validity of the phone
             && !empty($_POST['phone']) && strlen($_POST['phone']) == 10 && ctype_digit($_POST['phone'])
             && !empty($_POST['address'])
-            // Check the validity of the postal code
-            && !empty($_POST['postalCode']) && ctype_digit($_POST['postalCode'])
+            // Check the validity of the post code
+            && !empty($_POST['postCode']) && ctype_digit($_POST['postCode'])
             && !empty($_POST['city']) && !empty($_POST['sponsoringOption'])
             && !empty($_POST['totalAmount']) && ctype_digit($_POST['totalAmount'])) {
         $to = 'vhmavi@gmail.com';
@@ -68,7 +68,7 @@ Nom du responsable : {$_POST['associationLastName']}";
         $message .= "\r\nAdresse e-mail : {$_POST['email']}
 Téléphone : {$_POST['phone']}
 Adresse : {$_POST['address']}
-Code postal : {$_POST['postalCode']}
+Code postal : {$_POST['postCode']}
 Ville : {$_POST['city']}
 
 Type de don/parrainage : ";
@@ -136,7 +136,7 @@ Nom du responsable : {$_POST['associationLastName']}";
             $message .= "\r\nAdresse e-mail : {$_POST['email']}
 Téléphone : {$_POST['phone']}
 Adresse : {$_POST['address']}
-Code postal : {$_POST['postalCode']}
+Code postal : {$_POST['postCode']}
 Ville : {$_POST['city']}
 
 Type de don/parrainage : ";

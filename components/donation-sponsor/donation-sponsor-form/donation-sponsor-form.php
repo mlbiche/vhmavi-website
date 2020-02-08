@@ -98,11 +98,11 @@
             <?php echo $lang['donationSponsor-donationSponsorFormAddressFeedback']; ?>
         </div>
     </div>
-    <!-- This form row contains the postal code and the city name -->
+    <!-- This form row contains the post code and the city name -->
     <div class="form-row">
         <div class="form-group col-12 col-md-3">
-            <label for="donation-sponsor-form-postal-code"><?php echo $lang['donationSponsor-donationSponsorFormPostCodeLabel']; ?> <span class="vhmavi-required-field">*</span></label>
-            <input type="text" class="form-control" name="postalCode" id="donation-sponsor-form-postal-code" placeholder="<?php echo $lang['donationSponsor-donationSponsorFormPostCodePlaceholder']; ?>" required>
+            <label for="donation-sponsor-form-post-code"><?php echo $lang['donationSponsor-donationSponsorFormPostCodeLabel']; ?> <span class="vhmavi-required-field">*</span></label>
+            <input type="text" class="form-control" name="postCode" id="donation-sponsor-form-post-code" placeholder="<?php echo $lang['donationSponsor-donationSponsorFormPostCodePlaceholder']; ?>" required>
             <div class="invalid-feedback">
                 <?php echo $lang['donationSponsor-donationSponsorFormPostCodeFeedback']; ?>
             </div>
