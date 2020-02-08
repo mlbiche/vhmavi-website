@@ -1,6 +1,6 @@
 <?php
     // Load the accepted language
-    include("includes/lang-loader.php");
+    include('includes/lang-loader.php');
 
     $selectedLang = parseAskedLang();
 
@@ -29,7 +29,7 @@
     <link rel="canonical" href="http://vhmavi.edu.np/team.php" /> 
 
     <!-- Common head include -->
-    <?php include("includes/head.php"); ?>
+    <?php include('includes/head.php'); ?>
     
     <!-- Specific stylesheet -->
     <link rel="stylesheet" href="css/team.css" />
@@ -48,14 +48,14 @@
 </head>
 <body>
     <!-- Header include -->
-    <?php include("components/vhmavi-header/vhmavi-header.php"); ?>
+    <?php include('components/vhmavi-header/vhmavi-header.php'); ?>
 
     <div class="container vhmavi-container">
         <!-- Direction include -->
-        <?php include("components/team/team-direction/team-direction.php"); ?>
+        <?php include('components/team/team-direction/team-direction.php'); ?>
 
         <!-- Team list include -->
-        <?php include("components/team/team-list/team-list.php"); ?>
+        <?php include('components/team/team-list/team-list.php'); ?>
     </div>
     <div class="container vhmavi-container vhmavi-full-width-img-container">
         <div class="row">
@@ -66,10 +66,10 @@
     </div>
 
     <!-- Footer include -->
-    <?php include("components/vhmavi-footer/vhmavi-footer.php"); ?>
+    <?php include('components/vhmavi-footer/vhmavi-footer.php'); ?>
     
     <!-- Bootstrap and JQuery script loader include -->
-    <?php include("includes/script-loader.php"); ?>
+    <?php include('includes/script-loader.php'); ?>
 
     <!-- Accordion script loading -->
     <script src="components/vhmavi-accordion/vhmavi-accordion.js"></script>

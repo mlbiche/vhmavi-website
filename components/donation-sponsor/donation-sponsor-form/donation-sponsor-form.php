@@ -118,7 +118,7 @@
     <!-- Form group for sponsoring option -->
     <div class="form-group">        
         <!-- Donation sponsor sponsoring option include -->
-        <?php include("components/donation-sponsor/donation-sponsor-option/donation-sponsor-option.php"); ?>
+        <?php include('components/donation-sponsor/donation-sponsor-option/donation-sponsor-option.php'); ?>
     </div>
     <!-- Form group for total amount -->
     <div class="form-group">

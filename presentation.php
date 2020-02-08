@@ -1,6 +1,6 @@
 <?php
     // Load the accepted language
-    include("includes/lang-loader.php");
+    include('includes/lang-loader.php');
 
     $selectedLang = parseAskedLang();
 
@@ -29,7 +29,7 @@
     <link rel="canonical" href="http://vhmavi.edu.np/presentation.php" /> 
 
     <!-- Common head include -->
-    <?php include("includes/head.php"); ?>
+    <?php include('includes/head.php'); ?>
 
     <!-- Specific stylesheet -->
     <link rel="stylesheet" href="css/presentation.css" />
@@ -39,7 +39,7 @@
 </head>
 <body>
     <!-- Header include -->
-    <?php include("components/vhmavi-header/vhmavi-header.php"); ?>
+    <?php include('components/vhmavi-header/vhmavi-header.php'); ?>
 
     <!-- Contexte -->
     <div class="container vhmavi-container vhmavi-text-img-shared-container">
@@ -95,10 +95,10 @@
     </div>
 
     <!-- Footer include -->
-    <?php include("components/vhmavi-footer/vhmavi-footer.php"); ?>
+    <?php include('components/vhmavi-footer/vhmavi-footer.php'); ?>
 
     <!-- Bootstrap and JQuery script loader include -->
-    <?php include("includes/script-loader.php"); ?>
+    <?php include('includes/script-loader.php'); ?>
 
     <!-- Text with image rows script loading -->
     <script src="components/vhmavi-txt-img-shared-row/vhmavi-txt-img-shared-row.js"></script>

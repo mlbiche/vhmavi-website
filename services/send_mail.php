@@ -19,7 +19,7 @@
             // Check the validity of the email
             && !empty($_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)
             && !empty($_POST['subject']) && !empty($_POST['message'])) {
-        $to = "vhmavi@gmail.com";
+        $to = 'vhmavi@gmail.com';
 
         // Preparing the subject
         $subject = "vhmavi.edu.np - Nouveau message : \"{$_POST['subject']}\"";
@@ -40,7 +40,7 @@ Message : \"{$_POST['message']}\"";
             'X-Mailer' => 'PHP/' . phpversion()
         );
         // The max lenght for a line in a mail is 70 characters so we cut longer lines
-        $message = wordwrap($message, 70, "\r\n");
+        $message = wordwrap($message, 70, '\r\n');
 
         // Send the email
         $done = mail($to, $subject, $message, $headers);
@@ -65,7 +65,7 @@ Message : \"{$_POST['message']}\"
 
 Nous vous répondrons dans les plus brefs délais.";
             // The max lenght for a line in a mail is 70 characters so we cut longer lines
-            $message = wordwrap($message, 70, "\r\n");
+            $message = wordwrap($message, 70, '\r\n');
 
             // Send the copy email
             mail($to, $subject, $message, $headers);

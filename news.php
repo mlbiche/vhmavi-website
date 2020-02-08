@@ -1,6 +1,6 @@
 <?php
     // Load the accepted language
-    include("includes/lang-loader.php");
+    include('includes/lang-loader.php');
 
     $selectedLang = parseAskedLang();
 
@@ -29,7 +29,7 @@
     <link rel="canonical" href="http://vhmavi.edu.np/news.php" /> 
 
     <!-- Common head include -->
-    <?php include("includes/head.php"); ?>
+    <?php include('includes/head.php'); ?>
         
     <!-- Accordion stylesheet -->
     <link rel="stylesheet" href="components/vhmavi-accordion/vhmavi-accordion.css" />
@@ -45,7 +45,7 @@
 </head>
 <body>
     <!-- Header include -->
-    <?php include("components/vhmavi-header/vhmavi-header.php"); ?>
+    <?php include('components/vhmavi-header/vhmavi-header.php'); ?>
 
     <!-- Newsletters -->
     <div class="container vhmavi-container">
@@ -58,22 +58,22 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7">
                 <!-- Newsletter subscription form include -->
-                <?php include("components/news/news-newsletter-form/news-newsletter-form.php"); ?>
+                <?php include('components/news/news-newsletter-form/news-newsletter-form.php'); ?>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7">
                 <!-- Newsletter accordion list include -->
-                <?php include("components/news/news-newsletter-list/news-newsletter-list.php"); ?>
+                <?php include('components/news/news-newsletter-list/news-newsletter-list.php'); ?>
             </div>
         </div>
     </div>
 
     <!-- Footer include -->
-    <?php include("components/vhmavi-footer/vhmavi-footer.php"); ?>
+    <?php include('components/vhmavi-footer/vhmavi-footer.php'); ?>
     
     <!-- Bootstrap and JQuery script loader include -->
-    <?php include("includes/script-loader.php"); ?>
+    <?php include('includes/script-loader.php'); ?>
 
     <!--
         Newsletter subscription form script loading

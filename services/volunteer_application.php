@@ -16,7 +16,7 @@
      * Here, it separates the message from the attached CV
      * It is just a hash of a random file
      */
-    $boundary = md5("vhmavi.edu.np");
+    $boundary = md5('vhmavi.edu.np');
     
     // The done variable is used to check that the email was successfully sent or not
     $done = 0;
@@ -31,14 +31,14 @@
         // Read the CV file
         $cv_file = $_FILES['cv'];
 
-        $handle = fopen($cv_file['tmp_name'], "r");
+        $handle = fopen($cv_file['tmp_name'], 'r');
         $content = fread($handle, $cv_file['size']);
         fclose($handle);
 
         // Encode the CV file
         $encoded_content = chunk_split(base64_encode($content), 70);
         
-        $to = "vhmavi@gmail.com";
+        $to = 'vhmavi@gmail.com';
 
         // Preparing the subject
         $subject = "vhmavi.edu.np - Nouvelle candidature d'un bénévole : {$_POST['firstName']} {$_POST['lastName']}";
@@ -63,7 +63,7 @@ En prenant contact avec lui, pensez à lui envoyer la fiche de bénévole.\r\n";
 Content-Type: text/plain; charset=utf-8\r\n\r\n";
 
         // Add the encoded message
-        $body .= wordwrap($message, 70, "\r\n");
+        $body .= wordwrap($message, 70, '\r\n');
 
         /**
          * Prepare the encoded attached CV part
@@ -72,7 +72,7 @@ Content-Type: text/plain; charset=utf-8\r\n\r\n";
 Content-Type: {$cv_file['type']}; name={$cv_file['name']}
 Content-Disposition: attachment; filename={$cv_file['name']}
 Content-Transfer-Encoding: base64
-X-Attachment-Id: ".rand(1000,99999)."\r\n\r\n";
+X-Attachment-Id: ".rand(1000,99999).'\r\n\r\n';
 
         // Add the encoded attached cv
         $body .= $encoded_content;
@@ -92,7 +92,7 @@ X-Attachment-Id: ".rand(1000,99999)."\r\n\r\n";
             $to = $_POST['email'];
             
             // Preparing the subject
-            $subject = "VHMaVi - Votre candidature de bénévolat";
+            $subject = 'VHMaVi - Votre candidature de bénévolat';
 
             // Preparing the message content
             $message = "Nous confirmons l'envoi de votre candidature de bénévolat sur notre site.
@@ -105,7 +105,7 @@ Présentation du projet : \"{$_POST['presentation']}\"
 
 Nous vous recontacterons dans les plus bref délais après avoir pris connaissance de votre candidature.";
             // The max lenght for a line in a mail is 70 characters so we cut longer lines
-            $message = wordwrap($message, 70, "\r\n");
+            $message = wordwrap($message, 70, '\r\n');
 
             $headers = array(
                 'From' => 'Webmaster@vhmavi.edu.np',

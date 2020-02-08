@@ -4,7 +4,7 @@
      * This file process the server-side form submission from news.php.
      */
 
-    include("subscribe_newsletter_mod.php");
+    include('subscribe_newsletter_mod.php');
 
     /**
      * Called as POST HTTP request

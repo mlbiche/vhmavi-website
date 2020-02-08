@@ -4,7 +4,7 @@
      * This file process the server-side form submission from donation-sponsor.php.
      */
     
-    include("subscribe_newsletter_mod.php");
+    include('subscribe_newsletter_mod.php');
 
     /**
      * Called as POST HTTP request
@@ -33,26 +33,26 @@
             && !empty($_POST['postalCode']) && ctype_digit($_POST['postalCode'])
             && !empty($_POST['city']) && !empty($_POST['sponsoringOption'])
             && !empty($_POST['totalAmount']) && ctype_digit($_POST['totalAmount'])) {
-        $to = "vhmavi@gmail.com";
+        $to = 'vhmavi@gmail.com';
 
         // Preparing the subject
-        $subject = "vhmavi.edu.np - Nouveau ";
+        $subject = 'vhmavi.edu.np - Nouveau ';
         
         if ($_POST['sponsoringOption'] == 'donation-sponsor-option-project')
-            $subject .= "don";
+            $subject .= 'don';
         else
-            $subject .= "parrainage";
+            $subject .= 'parrainage';
 
 
         // Preparing the message content
-        $message = "Vous avez reçu un nouveau ";
+        $message = 'Vous avez reçu un nouveau ';
         
         if ($_POST['sponsoringOption'] == 'donation-sponsor-option-project')
-            $message .= "don";
+            $message .= 'don';
         else
-            $message .= "parrainage";
+            $message .= 'parrainage';
 
-        $message .= " depuis le formulaire de don et parrainage du site vhmavi.edu.np.\r\n\r\n";
+        $message .= ' depuis le formulaire de don et parrainage du site vhmavi.edu.np.\r\n\r\n';
 
         // Adapt the message content to a person or an association
         if ($_POST['firstName'] !== '' &&  $_POST['lastName'] !== '') {
@@ -76,16 +76,16 @@ Type de don/parrainage : ";
         // Add the sponsoring option
         switch ($_POST['sponsoringOption']) {
             case 'donation-sponsor-option-project':
-                $message .= "Projet/Don ponctuel";
+                $message .= 'Projet/Don ponctuel';
                 break;
             case 'donation-sponsor-option-extern':
-                $message .= "Parrainage Externe";
+                $message .= 'Parrainage Externe';
                 break;
             case 'donation-sponsor-option-half-intern':
-                $message .= "Parrainage Interne 50%";
+                $message .= 'Parrainage Interne 50%';
                 break;
             case 'donation-sponsor-option-intern':
-                $message .= "Parrainage Interne 100%";
+                $message .= 'Parrainage Interne 100%';
                 break;
         }
 
@@ -93,16 +93,16 @@ Type de don/parrainage : ";
 
         // For children sponsor, add a "each-month" text
         if ($_POST['sponsoringOption'] != 'donation-sponsor-option-project')
-            $message .= "/mois";
+            $message .= '/mois';
 
-        $message .= "\r\n\r\nMerci de prendre contact avec cette personne pour lui transmettre les coordonnées bancaires.";
+        $message .= '\r\n\r\nMerci de prendre contact avec cette personne pour lui transmettre les coordonnées bancaires.';
 
         $headers = array(
             'From' => 'Webmaster@vhmavi.edu.np',
             'X-Mailer' => 'PHP/' . phpversion()
         );
         // The max lenght for a line in a mail is 70 characters so we cut longer lines
-        $message = wordwrap($message, 70, "\r\n");
+        $message = wordwrap($message, 70, '\r\n');
 
         // Send the email
         $done = mail($to, $subject, $message, $headers);
@@ -112,15 +112,15 @@ Type de don/parrainage : ";
             $to = $_POST['email'];
             
             // Preparing the subject
-            $subject = "VHMaVi - Votre ";
+            $subject = 'VHMaVi - Votre ';
         
             if ($_POST['sponsoringOption'] == 'donation-sponsor-option-project')
-                $subject .= "don";
+                $subject .= 'don';
             else
-                $subject .= "parrainage";
+                $subject .= 'parrainage';
 
             // Preparing the message content
-            $message = "Un immense merci ! Nous confirmons l'envoi de votre parrainage sur notre site.\r\n\r\n";
+            $message = 'Un immense merci ! Nous confirmons l\'envoi de votre parrainage sur notre site.\r\n\r\n';
 
             // Adapt the message content to a person or an association
             if ($_POST['firstName'] !== '' &&  $_POST['lastName'] !== '') {
@@ -144,16 +144,16 @@ Type de don/parrainage : ";
             // Add the sponsoring option
             switch ($_POST['sponsoringOption']) {
                 case 'donation-sponsor-option-project':
-                    $message .= "Projet/Don ponctuel";
+                    $message .= 'Projet/Don ponctuel';
                     break;
                 case 'donation-sponsor-option-extern':
-                    $message .= "Parrainage Externe";
+                    $message .= 'Parrainage Externe';
                     break;
                 case 'donation-sponsor-option-half-intern':
-                    $message .= "Parrainage Interne 50%";
+                    $message .= 'Parrainage Interne 50%';
                     break;
                 case 'donation-sponsor-option-intern':
-                    $message .= "Parrainage Interne 100%";
+                    $message .= 'Parrainage Interne 100%';
                     break;
             }
 
@@ -161,12 +161,12 @@ Type de don/parrainage : ";
 
             // For children sponsor, add a "each-month" text
             if ($_POST['sponsoringOption'] != 'donation-sponsor-option-project')
-                $message .= "/mois";
+                $message .= '/mois';
 
-            $message .= "\r\n\r\nNous vous transmettrons nos coordonnées bancaires pour finaliser votre aide dans les plus brefs délais.";
+            $message .= '\r\n\r\nNous vous transmettrons nos coordonnées bancaires pour finaliser votre aide dans les plus brefs délais.';
             
             // The max lenght for a line in a mail is 70 characters so we cut longer lines
-            $message = wordwrap($message, 70, "\r\n");
+            $message = wordwrap($message, 70, '\r\n');
 
             // Send the copy email
             mail($to, $subject, $message, $headers);

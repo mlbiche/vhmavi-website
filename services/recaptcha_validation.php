@@ -4,7 +4,7 @@
      * This file process the server-side reCAPTCHA validation.
      */
 
-    include("read_config.php");
+    include('read_config.php');
 
     if (!empty($_POST['gReCAPTCHAResponse'])) {
         // Load the reCAPTCHA config
@@ -20,7 +20,7 @@
     
         // Set the cURL options
         curl_setopt_array($curl, array(
-            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HTTPHEADER => array(
                 'content-type: application/json',

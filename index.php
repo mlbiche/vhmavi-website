@@ -1,6 +1,6 @@
 <?php
     // Load the accepted language
-    include("includes/lang-loader.php");
+    include('includes/lang-loader.php');
 
     $selectedLang = parseAskedLang();
 
@@ -35,7 +35,7 @@
     <meta name="google-site-verification" content="0qypsbEQnhjE9ezI9_IJQYJCLW13MFsBc3BgshgQPcw" />
 
     <!-- Common head include -->
-    <?php include("includes/head.php"); ?>
+    <?php include('includes/head.php'); ?>
 
     <!-- Carousel stylesheet -->
     <link rel="stylesheet" href="components/index/index-carousel/index-carousel.css" />
@@ -48,25 +48,25 @@
 </head>
 <body>
     <!-- Header include - navbar -->
-    <?php include("components/vhmavi-header/vhmavi-header.php"); ?>
+    <?php include('components/vhmavi-header/vhmavi-header.php'); ?>
 
     <!-- Carousel -->
-    <?php include("components/index/index-carousel/index-carousel.php"); ?>
+    <?php include('components/index/index-carousel/index-carousel.php'); ?>
 
     <!-- Description and logo container -->
-    <?php include("components/index/index-description/index-description.php"); ?>
+    <?php include('components/index/index-description/index-description.php'); ?>
 
     <!-- Figures container -->
-    <?php include("components/index/index-figures/index-figures.php"); ?>
+    <?php include('components/index/index-figures/index-figures.php'); ?>
 
     <!-- Footer include -->
-    <?php include("components/vhmavi-footer/vhmavi-footer.php"); ?>
+    <?php include('components/vhmavi-footer/vhmavi-footer.php'); ?>
 
     <!--
         Bootstrap and JQuery script loader include
         They are loaded first because JQuery is used by other JS scripts
     -->
-    <?php include("includes/script-loader.php"); ?>
+    <?php include('includes/script-loader.php'); ?>
 
     <!-- Carousel script loading -->
     <script src="components/index/index-carousel/index-carousel.js"></script>

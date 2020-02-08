@@ -4,7 +4,7 @@
      * This file provide a function that process the subscription to the newsletter.
      */
 
-    include("read_config.php");
+    include('read_config.php');
 
     /**
      * Subscribe a user to the school newsletter
@@ -35,7 +35,7 @@
 
         // Set the cURL options
         curl_setopt_array($curl, array(
-            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_POSTFIELDS => $bodyString,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HTTPHEADER => array(

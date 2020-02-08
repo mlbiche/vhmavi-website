@@ -50,6 +50,6 @@
      * @return The language file path
      */
     function getLangFile($lang) {
-        return "lang/" . $lang . ".php";
+        return 'lang/' . $lang . '.php';
     }
 ?>

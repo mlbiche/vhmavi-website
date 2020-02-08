@@ -1,6 +1,6 @@
 <?php
     // Load the accepted language
-    include("includes/lang-loader.php");
+    include('includes/lang-loader.php');
 
     $selectedLang = parseAskedLang();
 
@@ -29,7 +29,7 @@
     <link rel="canonical" href="http://vhmavi.edu.np/donation-sponsor.php" /> 
 
     <!-- Common head include -->
-    <?php include("includes/head.php"); ?>
+    <?php include('includes/head.php'); ?>
 
     <!-- Specific stylesheet -->
     <link rel="stylesheet" href="css/donation-sponsor.css" />
@@ -54,7 +54,7 @@
 </head>
 <body>
     <!-- Header include -->
-    <?php include("components/vhmavi-header/vhmavi-header.php"); ?>
+    <?php include('components/vhmavi-header/vhmavi-header.php'); ?>
 
     <div class="container vhmavi-container">
         <div class="row justify-content-center">
@@ -112,7 +112,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-7">
                 <!-- Donation sponsor form include -->
-                <?php include("components/donation-sponsor/donation-sponsor-form/donation-sponsor-form.php"); ?>
+                <?php include('components/donation-sponsor/donation-sponsor-form/donation-sponsor-form.php'); ?>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -125,10 +125,10 @@
     </div>
 
     <!-- Footer include -->
-    <?php include("components/vhmavi-footer/vhmavi-footer.php"); ?>
+    <?php include('components/vhmavi-footer/vhmavi-footer.php'); ?>
 
     <!-- Bootstrap and JQuery script loader include -->
-    <?php include("includes/script-loader.php"); ?>
+    <?php include('includes/script-loader.php'); ?>
 
     <!--
         Donation sponsor form script loading
