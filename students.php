@@ -19,14 +19,14 @@
 
         gtag('config', 'UA-144927724-1');
     </script>
-    
+
     <title><?php echo $lang['students-title']; ?></title>
-    
+
     <!-- Meta description for SEO -->
     <meta name="description" content="<?php echo $lang['students-metaDescription']; ?>" />
 
     <!-- Canonical link to reference the master copy of the URL to SEO -->
-    <link rel="canonical" href="http://vhmavi.edu.np/students.php" /> 
+    <link rel="canonical" href="http://vhmavi.edu.np/students.php" />
 
     <!-- Common head include -->
     <?php include('includes/head.php'); ?>
@@ -53,7 +53,7 @@
         </div>
     </div>
     <div class="container vhmavi-container vhmavi-text-img-shared-container">
-        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+        <div class="row row-cols-1 row-cols-lg-2 vhmavi-txt-img-shared-row">
             <div class="col vhmavi-text-col vhmavi-text-col-left">
                 <h2 class="vhmavi-students-h2"><?php echo $lang['students-paragraph2Header']; ?></h2>
                 <p><?php echo $lang['students-paragraph2Text1']; ?></p>
@@ -89,7 +89,7 @@
 
     <!-- Load text with image rows script -->
     <script src="components/vhmavi-txt-img-shared-row/vhmavi-txt-img-shared-row.js"></script>
-    
+
     <!-- School data script loading -->
     <script src="js/school-figures.js"></script>
 </body>

@@ -19,14 +19,14 @@
 
         gtag('config', 'UA-144927724-1');
     </script>
-    
+
     <title><?php echo $lang['presentation-title']; ?></title>
-    
+
     <!-- Meta description for SEO -->
     <meta name="description" content="<?php echo $lang['presentation-metaDescription']; ?>" />
 
     <!-- Canonical link to reference the master copy of the URL to SEO -->
-    <link rel="canonical" href="http://vhmavi.edu.np/presentation.php" /> 
+    <link rel="canonical" href="http://vhmavi.edu.np/presentation.php" />
 
     <!-- Common head include -->
     <?php include('includes/head.php'); ?>
@@ -43,7 +43,7 @@
 
     <!-- Contexte -->
     <div class="container vhmavi-container vhmavi-text-img-shared-container">
-        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+        <div class="row row-cols-1 row-cols-lg-2 vhmavi-txt-img-shared-row">
             <div class="col vhmavi-text-col vhmavi-text-col-left">
                 <h1 class="vhmavi-presentation-h1"><?php echo $lang['presentation-paragraph1Header']; ?></h1>
                 <p><?php echo $lang['presentation-paragraph1Text1']; ?></p>
@@ -54,7 +54,7 @@
                 <img src="img/presentation/nepal_field.jpg" alt="<?php echo $lang['presentation-imgAlt1']; ?>" id="vhmavi-img-nepal-field" />
             </div>
         </div>
-        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+        <div class="row row-cols-1 row-cols-lg-2 vhmavi-txt-img-shared-row">
             <div class="col vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
                 <img src="img/presentation/little_student.jpg" alt="<?php echo $lang['presentation-imgAlt2']; ?>" id="vhmavi-img-little-student" />
             </div>
@@ -66,7 +66,7 @@
                 <p><?php echo $lang['presentation-paragraph2Text4']; ?></p>
             </div>
         </div>
-        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+        <div class="row row-cols-1 row-cols-lg-2 vhmavi-txt-img-shared-row">
             <div class="col vhmavi-text-col vhmavi-text-col-left">
                 <h2 class="vhmavi-presentation-h2"><em><?php echo $lang['presentation-paragraph3Header']; ?></em></h2>
                 <p><?php echo $lang['presentation-paragraph3Text1']; ?></p>
@@ -80,7 +80,7 @@
                 <img src="img/presentation/old_school.jpg" alt="<?php echo $lang['presentation-imgAlt3']; ?>" />
             </div>
         </div>
-        <div class="row row-cols-12 row-cols-lg-6 vhmavi-txt-img-shared-row">
+        <div class="row row-cols-1 row-cols-lg-2 vhmavi-txt-img-shared-row">
             <div class="col vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
                 <img src="img/presentation/preschool_building.JPG" alt="<?php echo $lang['presentation-imgAlt4']; ?>" id="vhmavi-img-preschool-building" />
             </div>
