@@ -1,4 +1,4 @@
-<!-- 
+<!--
     news-newsletter-list.php
     The past newsletter list used in news.php
  -->
@@ -11,6 +11,16 @@
     <div class="vhmavi-accordion-body">
         <!-- The newsletters list -->
         <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <a href="https://sh1.sendinblue.com/v2rf0uvudt7e.html?t=1599319874" target="_blank">
+                    <?php echo $lang['news-newsListNewsletter23']; ?>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://sh1.sendinblue.com/v224suvudt7e.html?t=1599233387" target="_blank">
+                    <?php echo $lang['news-newsListNewsletter22']; ?>
+                </a>
+            </li>
             <li class="list-group-item">
                 <a href="http://sh1.sendinblue.com/na0mxn5vsc.html?t=1577612414" target="_blank">
                     <?php echo $lang['news-newsListNewsletter21']; ?>

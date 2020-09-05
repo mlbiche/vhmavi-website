@@ -133,7 +133,7 @@
     $lang['hostel-imgAlt1'] = 'Boarders before the dinner';
     $lang['hostel-imgAlt2'] = 'Dormitories';
     $lang['hostel-imgAlt3'] = 'New boarding school under construction';
-    
+
     // news.php
     $lang['news-title'] = 'School newsletter - Victor Hugo Manjushree Vidyapith - VHMaVi';
     $lang['news-metaDescription'] = 'Victor Hugo Manjushree Vidyapith, also called VHMaVi, is a nepalese school that provides a free and quality education.';
@@ -180,6 +180,8 @@
     $lang['news-newsListNewsletter19'] = 'January - March 2019';
     $lang['news-newsListNewsletter20'] = 'April - August 2019';
     $lang['news-newsListNewsletter21'] = 'August - December 2019';
+    $lang['news-newsListNewsletter22'] = 'January - March 2020';
+    $lang['news-newsListNewsletter23'] = 'April - August 2020';
 
     // team.php
     $lang['team-title'] = 'Our team - Victor Hugo Manjushree Vidyapith - VHMaVi';
