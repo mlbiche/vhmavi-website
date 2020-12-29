@@ -12,6 +12,11 @@
         <!-- The newsletters list -->
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
+                <a href="https://sh1.sendinblue.com/v3tccuvudt7e.html?t=1609236540" target="_blank">
+                    <?php echo $lang['news-newsListNewsletter24']; ?>
+                </a>
+            </li>
+            <li class="list-group-item">
                 <a href="https://sh1.sendinblue.com/v2rf0uvudt7e.html?t=1599319874" target="_blank">
                     <?php echo $lang['news-newsListNewsletter23']; ?>
                 </a>

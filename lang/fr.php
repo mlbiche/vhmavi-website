@@ -182,6 +182,7 @@
     $lang['news-newsListNewsletter21'] = 'Août - Décembre 2019';
     $lang['news-newsListNewsletter22'] = 'Janvier - Mars 2020';
     $lang['news-newsListNewsletter23'] = 'Avril - Août 2020';
+    $lang['news-newsListNewsletter24'] = 'Septembre - Décembre 2020';
 
     // team.php
     $lang['team-title'] = 'Notre équipe - Victor Hugo Manjushree Vidyapith - VHMaVi';
