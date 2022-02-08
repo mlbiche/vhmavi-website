@@ -12,37 +12,42 @@
         <!-- The newsletters list -->
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
-                <a href="https://sh1.sendinblue.com/v57wsuvudt7e.html?t=1621239030" target="_blank">
+                <a href="https://sh1.sendinblue.com/aduumyam4lpfe.html" target="_blank">
+                    <?php echo $lang['news-newsListNewsletter26']; ?>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://sh1.sendinblue.com/v57wsuvudt7e.html" target="_blank">
                     <?php echo $lang['news-newsListNewsletter25']; ?>
                 </a>
             </li>
             <li class="list-group-item">
-                <a href="https://sh1.sendinblue.com/v3tccuvudt7e.html?t=1609236540" target="_blank">
+                <a href="https://sh1.sendinblue.com/v3tccuvudt7e.html" target="_blank">
                     <?php echo $lang['news-newsListNewsletter24']; ?>
                 </a>
             </li>
             <li class="list-group-item">
-                <a href="https://sh1.sendinblue.com/v2rf0uvudt7e.html?t=1599319874" target="_blank">
+                <a href="https://sh1.sendinblue.com/v2rf0uvudt7e.html" target="_blank">
                     <?php echo $lang['news-newsListNewsletter23']; ?>
                 </a>
             </li>
             <li class="list-group-item">
-                <a href="https://sh1.sendinblue.com/v224suvudt7e.html?t=1599233387" target="_blank">
+                <a href="https://sh1.sendinblue.com/v224suvudt7e.html" target="_blank">
                     <?php echo $lang['news-newsListNewsletter22']; ?>
                 </a>
             </li>
             <li class="list-group-item">
-                <a href="http://sh1.sendinblue.com/na0mxn5vsc.html?t=1577612414" target="_blank">
+                <a href="http://sh1.sendinblue.com/na0mxn5vsc.html" target="_blank">
                     <?php echo $lang['news-newsListNewsletter21']; ?>
                 </a>
             </li>
             <li class="list-group-item">
-                <a href="http://sh1.sendinblue.com/n9r5ln5vsc.html?t=1568101347" target="_blank">
+                <a href="http://sh1.sendinblue.com/n9r5ln5vsc.html" target="_blank">
                     <?php echo $lang['news-newsListNewsletter20']; ?>
                 </a>
             </li>
             <li class="list-group-item">
-                <a href="http://sh1.sendinblue.com/1zv09n5vsc.html?t=1556895139" target="_blank">
+                <a href="http://sh1.sendinblue.com/1zv09n5vsc.html" target="_blank">
                     <?php echo $lang['news-newsListNewsletter19']; ?>
                 </a>
             </li>
