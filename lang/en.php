@@ -185,6 +185,7 @@
     $lang['news-newsListNewsletter24'] = 'September - December 2020';
     $lang['news-newsListNewsletter25'] = 'January - April 2021';
     $lang['news-newsListNewsletter26'] = 'June - December 2021';
+    $lang['news-newsListNewsletter27'] = 'April - October 2022';
 
     // team.php
     $lang['team-title'] = 'Our team - Victor Hugo Manjushree Vidyapith - VHMaVi';

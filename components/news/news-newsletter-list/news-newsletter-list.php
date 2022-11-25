@@ -12,6 +12,11 @@
         <!-- The newsletters list -->
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
+                <a href="https://3v8de.r.a.d.sendibm1.com/mk/mr/mnqzuIrEqTWyCdPlk4A62ePv87455E-MXR7L4PwV88VfhSbi1GyNOEcMlQc-EC6JkPM0IyoNyjSvU8BxpQpuYEvLiD--YqE9nM_kaGyar1jBDX9c4x7mQi2eD8dok_SWvAB5Sg" target="_blank">
+                    <?php echo $lang['news-newsListNewsletter27']; ?>
+                </a>
+            </li>
+            <li class="list-group-item">
                 <a href="https://sh1.sendinblue.com/aduumyam4lpfe.html" target="_blank">
                     <?php echo $lang['news-newsListNewsletter26']; ?>
                 </a>
