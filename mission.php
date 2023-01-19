@@ -19,14 +19,14 @@
 
         gtag('config', 'UA-144927724-1');
     </script>
-    
+
     <title><?php echo $lang['mission-title']; ?></title>
-    
+
     <!-- Meta description for SEO -->
     <meta name="description" content="<?php echo $lang['mission-metaDescription']; ?>" />
 
     <!-- Canonical link to reference the master copy of the URL to SEO -->
-    <link rel="canonical" href="http://vhmavi.edu.np/mission.php" /> 
+    <link rel="canonical" href="http://vhmavi.edu.np/mission.php" />
 
     <!-- Common head include -->
     <?php include('includes/head.php'); ?>
@@ -70,10 +70,10 @@
                 </div>
                 <p><?php echo $lang['mission-paragraph2Text3']; ?></p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 vhmavi-icons-text-col">   
+            <div class="col-12 col-md-6 col-lg-4 vhmavi-icons-text-col">
                 <div  class="vhmavi-icon-container">
                     <i class="vhmavi-icon-speech-bubble"></i>
-                </div>                     
+                </div>
                 <p><?php echo $lang['mission-paragraph2Text4']; ?></p>
             </div>
             <div class="col-12 vhmavi-icons-text-col vhmavi-icons-text-col-last">
@@ -105,7 +105,7 @@
     <div class="container vhmavi-container vhmavi-full-width-img-container">
         <div class="row">
             <div class="col vhmavi-img-col">
-                <img src="img/mission/student_group.JPG" alt="<?php echo $lang['mission-imgAlt3']; ?>" id="vhmavi-img-student-group" />
+                <img src="img/mission/student_group.jpg" alt="<?php echo $lang['mission-imgAlt3']; ?>" id="vhmavi-img-student-group" />
             </div>
         </div>
     </div>
@@ -121,7 +121,7 @@
     <div class="container vhmavi-container vhmavi-full-width-img-container">
         <div class="row">
             <div class="col vhmavi-img-col">
-                <img src="img/mission/preschool_student.JPG" alt="<?php echo $lang['mission-imgAlt4']; ?>" />
+                <img src="img/mission/preschool_student.jpg" alt="<?php echo $lang['mission-imgAlt4']; ?>" />
             </div>
         </div>
     </div>
@@ -136,7 +136,7 @@
     <div class="container vhmavi-container vhmavi-full-width-img-container">
         <div class="row">
             <div class="col vhmavi-img-col">
-                <img src="img/mission/teacher.JPG" alt="<?php echo $lang['mission-imgAlt5']; ?>" id="vhmavi-img-teacher" />
+                <img src="img/mission/teacher.jpg" alt="<?php echo $lang['mission-imgAlt5']; ?>" id="vhmavi-img-teacher" />
             </div>
         </div>
     </div>
@@ -157,7 +157,7 @@
 
     <!-- Bootstrap and JQuery script loader include -->
     <?php include('includes/script-loader.php'); ?>
-    
+
     <!-- School data script loading -->
     <script src="js/school-figures.js"></script>
 </body>

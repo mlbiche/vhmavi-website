@@ -59,7 +59,7 @@
                 <p><?php echo $lang['students-paragraph2Text1']; ?></p>
             </div>
             <div class="col vhmavi-img-col vhmavi-img-col-right">
-                <img src="img/students/student_smile.JPG" alt="<?php echo $lang['students-imgAlt1']; ?>" id="vhmavi-img-student-smile" />
+                <img src="img/students/student_smile.jpg" alt="<?php echo $lang['students-imgAlt1']; ?>" id="vhmavi-img-student-smile" />
             </div>
         </div>
     </div>
@@ -76,7 +76,7 @@
     <div class="container vhmavi-container vhmavi-full-width-img-container">
         <div class="row">
             <div class="col vhmavi-img-col">
-                <img src="img/students/student_group.JPG" alt="<?php echo $lang['students-imgAlt2']; ?>" id="vhmavi-img-student-group" />
+                <img src="img/students/student_group.jpg" alt="<?php echo $lang['students-imgAlt2']; ?>" id="vhmavi-img-student-group" />
             </div>
         </div>
     </div>

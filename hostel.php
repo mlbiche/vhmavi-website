@@ -19,14 +19,14 @@
 
         gtag('config', 'UA-144927724-1');
     </script>
-    
+
     <title><?php echo $lang['hostel-title']; ?></title>
 
     <!-- Meta description for SEO -->
     <meta name="description" content="<?php echo $lang['hostel-metaDescription']; ?>" />
 
     <!-- Canonical link to reference the master copy of the URL to SEO -->
-    <link rel="canonical" href="http://vhmavi.edu.np/hostel.php" /> 
+    <link rel="canonical" href="http://vhmavi.edu.np/hostel.php" />
 
     <!-- Common head include -->
     <?php include('includes/head.php'); ?>
@@ -61,7 +61,7 @@
     <div class="container vhmavi-container vhmavi-full-width-img-container">
         <div class="row">
             <div class="col vhmavi-img-col">
-                <img src="img/hostel/hostel.JPG" alt="<?php echo $lang['hostel-imgAlt2']; ?>" />
+                <img src="img/hostel/hostel.jpg" alt="<?php echo $lang['hostel-imgAlt2']; ?>" />
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@
     <div class="container vhmavi-container vhmavi-full-width-img-container">
         <div class="row">
             <div class="col vhmavi-img-col">
-                <img src="img/hostel/new_hostel.JPG" alt="<?php echo $lang['hostel-imgAlt3']; ?>" id="vhmavi-img-new-hostel" />
+                <img src="img/hostel/new_hostel.jpg" alt="<?php echo $lang['hostel-imgAlt3']; ?>" id="vhmavi-img-new-hostel" />
             </div>
         </div>
     </div>

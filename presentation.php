@@ -82,7 +82,7 @@
         </div>
         <div class="row row-cols-1 row-cols-lg-2 vhmavi-txt-img-shared-row">
             <div class="col vhmavi-img-col vhmavi-img-col-left order-12 order-lg-1">
-                <img src="img/presentation/preschool_building.JPG" alt="<?php echo $lang['presentation-imgAlt4']; ?>" id="vhmavi-img-preschool-building" />
+                <img src="img/presentation/preschool_building.jpg" alt="<?php echo $lang['presentation-imgAlt4']; ?>" id="vhmavi-img-preschool-building" />
             </div>
             <div class="col vhmavi-text-col vhmavi-text-col-right order-1 order-lg-12">
                 <h2 class="vhmavi-presentation-h2"><?php echo $lang['presentation-paragraph4Header']; ?></h2>
