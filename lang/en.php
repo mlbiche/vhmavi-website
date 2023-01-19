@@ -114,7 +114,7 @@
     $lang['students-paragraph3Header'] = 'From Chapali… to the Far West of Nepal!';
     $lang['students-paragraph3Text1'] = 'Initially created for the children of the village of Chapali, the school now welcomes children from different regions of Nepal.';
     $lang['students-paragraph3Text2'] = 'A vast majority of students live less than 1,5km from school. There is no school transport at VHMaVi, everyone comes by foot. This offers an education that is near families living in the village. Although the students live in the area, they originate from all corners of Nepal, their families having migrated to Kathmandu du to better job prospects and living conditions.';
-    $lang['students-paragraph3Text3'] = 'Notre internat permet aussi d\'accueillir des enfants venant de plus loin qui nous sont recommandés. Venant du district de Nuwakot, ou encore des régions du Solu Khumbu, du Teraï et même du Far West népalais, ceux-ci sont logés à quelques pas l\'école.';
+    $lang['students-paragraph3Text3'] = 'Our boarding school also allows us to welcome children that live far away and have been recommended to us. Coming from the Nuwakot district, or the regions of Solu Khumbu, Teraï or even the Far West, these children are given accommodation only a few minutes away from school.';
     $lang['students-imgAlt1'] = 'Child portrait';
     $lang['students-imgAlt2'] = 'Student group';
 
